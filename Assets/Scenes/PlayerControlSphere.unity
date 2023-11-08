@@ -471,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floor: {fileID: 1562629127}
   moveSpeed: 2
+  holdMouseToControl: 1
 --- !u!114 &1457892922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3448018452af09948a064dab4e07461e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 3
   followDistance: 3
   lineLeader: 0
   inFrontOfMe: {fileID: 0}
@@ -673,7 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3448018452af09948a064dab4e07461e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 3
   followDistance: 2
   lineLeader: 0
   inFrontOfMe: {fileID: 1457892920}
@@ -694,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3448018452af09948a064dab4e07461e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 3
   followDistance: 2
   lineLeader: 0
   inFrontOfMe: {fileID: 1966091790}

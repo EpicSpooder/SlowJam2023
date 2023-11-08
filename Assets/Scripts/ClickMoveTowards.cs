@@ -8,6 +8,8 @@ public class ClickMoveTowards : MonoBehaviour
     public GameObject floor;
     public float moveSpeed = 1f;
     private Vector3 moveTo;
+    private bool shouldMove = false;
+    public bool holdMouseToControl = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,25 +28,42 @@ public class ClickMoveTowards : MonoBehaviour
     // Allows the player to click somewhere on our "floor", and the position of their click is saved
     private void RayCast()
     {
-        if (Input.GetMouseButtonDown(0))
+        // Control method 1: click to set the position player will travel to
+        if (!holdMouseToControl && Input.GetMouseButtonDown(0))
         {
+            shouldMove = true;
             RaycastHit hitInfo;
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, Mathf.Infinity, 1);
             if (!hit)
             {
-                Debug.Log("no hit");
+                //Debug.Log("no hit");
             }
             else if (hitInfo.transform.gameObject.Equals(floor))
             {
                 moveTo = hitInfo.point;
-                Debug.Log("hit " + hitInfo.transform.gameObject.name);
+                //Debug.Log("hit " + hitInfo.transform.gameObject.name);
+            }  
+        }
+        // Control method 2: click and hold to move player to the mouse position
+        else if (holdMouseToControl && Input.GetMouseButton(0)) {
+            RaycastHit hitInfo;
+            bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, Mathf.Infinity, 1);
+            if (!hit)
+            {
             }
+            else if (hitInfo.transform.gameObject.Equals(floor))
+            {
+                moveTo = hitInfo.point;
+            }
+            shouldMove = true;
+        } else if (holdMouseToControl && Input.GetMouseButtonUp(0)) {
+            shouldMove = false; // stop moving when mouse button released
         }
     }
 
     private void MoveToPoint()
     {
-        if (moveTo != null)
+        if (shouldMove && moveTo != null)
         {
             // Move the object to a 3d coordinate, at a designated speed, until it gets there
             if (transform.position != moveTo)
