@@ -6,10 +6,10 @@ using static UnityEngine.GraphicsBuffer;
 public class ClickMoveTowards : MonoBehaviour
 {
     public GameObject floor;
+    public GameObject movementIndicator;
     public float moveSpeed = 1f;
     private Vector3 moveTo;
-    private bool shouldMove = false;
-    public bool holdMouseToControl = true;
+    public bool canHoldMouseDown = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,45 +29,31 @@ public class ClickMoveTowards : MonoBehaviour
     private void RayCast()
     {
         // Control method 1: click to set the position player will travel to
-        if (!holdMouseToControl && Input.GetMouseButtonDown(0))
+        if (!canHoldMouseDown && Input.GetMouseButtonDown(0))
         {
-            shouldMove = true;
             RaycastHit hitInfo;
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, Mathf.Infinity, 1);
-            if (!hit)
-            {
-                //Debug.Log("no hit");
-            }
-            else if (hitInfo.transform.gameObject.Equals(floor))
-            {
+            if (hit && hitInfo.transform.gameObject.Equals(floor))
                 moveTo = hitInfo.point;
-                //Debug.Log("hit " + hitInfo.transform.gameObject.name);
-            }  
+            // draw movment indicator
+            if (movementIndicator != null)
+                movementIndicator.transform.position = moveTo;
         }
         // Control method 2: click and hold to move player to the mouse position
-        else if (holdMouseToControl && Input.GetMouseButton(0)) {
+        else if (canHoldMouseDown && Input.GetMouseButton(0)) {
             RaycastHit hitInfo;
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, Mathf.Infinity, 1);
-            if (!hit)
-            {
-            }
-            else if (hitInfo.transform.gameObject.Equals(floor))
-            {
+            if (hit && hitInfo.transform.gameObject.Equals(floor))
                 moveTo = hitInfo.point;
-            }
-            shouldMove = true;
-        } else if (holdMouseToControl && Input.GetMouseButtonUp(0)) {
-            shouldMove = false; // stop moving when mouse button released
+            if (movementIndicator != null)
+                movementIndicator.transform.position = moveTo;
         }
     }
 
     private void MoveToPoint()
     {
-        if (shouldMove && moveTo != null)
-        {
-            // Move the object to a 3d coordinate, at a designated speed, until it gets there
-            if (transform.position != moveTo)
-                transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, moveTo, 0.5f), moveSpeed * Time.deltaTime);
-        }
+        // Move the object to a 3d coordinate, at a designated speed, until it gets there
+        if (transform.position != moveTo)
+            transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, moveTo, 0.5f), moveSpeed * Time.deltaTime);
     }
 }
