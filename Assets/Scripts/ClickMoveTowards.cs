@@ -46,9 +46,9 @@ public class ClickMoveTowards : MonoBehaviour
     {
         if (moveTo != null)
         {
-            // Move the object to a 3d coordinate, at a given speed, until it gets there
+            // Move the object to a 3d coordinate, at a designated speed, until it gets there
             if (transform.position != moveTo)
-                transform.position = Vector3.MoveTowards(transform.position, moveTo, moveSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, moveTo, 0.5f), moveSpeed * Time.deltaTime);
         }
     }
 }
