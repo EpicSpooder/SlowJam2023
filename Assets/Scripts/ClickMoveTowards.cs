@@ -10,6 +10,7 @@ public class ClickMoveTowards : MonoBehaviour
     public float moveSpeed = 1f;
     private Vector3 moveTo;
     public bool canHoldMouseDown = true;
+    public bool keepYPos = true;
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +53,10 @@ public class ClickMoveTowards : MonoBehaviour
 
     private void MoveToPoint()
     {
-        // Move the object to a 3d coordinate, at a designated speed, until it gets there
+        // correct the Y position of the destination if we want the object to maintain its previous Y
+        if (keepYPos)
+            moveTo.y = transform.position.y;
+        // Move the object to the destination, at a designated speed
         if (transform.position != moveTo)
             transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, moveTo, 0.5f), moveSpeed * Time.deltaTime);
     }
