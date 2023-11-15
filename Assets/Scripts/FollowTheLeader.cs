@@ -7,8 +7,6 @@ public class FollowTheLeader : MonoBehaviour
     public float moveSpeed = 1f;
     public float followDistance = 2f;
 
-    [HideInInspector] 
-    public bool lineLeader = false;
     public GameObject inFrontOfMe = null;
     
     // Start is called before the first frame update
