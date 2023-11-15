@@ -14,6 +14,7 @@ public class FollowTheLeader : MonoBehaviour
     private float leaderSwapTime;
     private FollowTheLeader hat;
     public bool keepYPos = true;
+    public bool collisionStopsMovement = true;
 
     void Start()
     {
@@ -28,12 +29,15 @@ public class FollowTheLeader : MonoBehaviour
         if (name.Equals("Player") || CompareTag("Player"))
         {
             lineLeader = true;
-            GetComponent<ClickMoveTowards>().enabled = true;
             Debug.Assert(Camera.main.GetComponent<FollowTheLeader>() != null);
             Debug.Assert(Camera.main.GetComponent<CameraControls>() != null);
             Camera.main.GetComponent<FollowTheLeader>().inFrontOfMe = GetComponent<FollowTheLeader>();
             Camera.main.GetComponent<CameraControls>().lookAtPosition = transform;
             hat.inFrontOfMe = GetComponent<FollowTheLeader>();
+        } else
+        {
+            if (GetComponent<ClickMoveTowards>() != null)
+                GetComponent<ClickMoveTowards>().enabled = false;
         }
          
     }
@@ -56,6 +60,14 @@ public class FollowTheLeader : MonoBehaviour
             // Slime is not following anything i.e. not collected
             if (lineLeader && theOtherGuy.inFrontOfMe == null)
             {
+                if (collisionStopsMovement)
+                {
+                    // stop movement from other script
+                    ClickMoveTowards timeToStop = GetComponent<ClickMoveTowards>();
+                    timeToStop.moveTo = transform.position;
+                    timeToStop.movementIndicator.transform.position = new Vector3(timeToStop.moveTo.x, timeToStop.movementIndicator.transform.position.y, timeToStop.moveTo.z);
+                }
+
                 AddBehindMe(theOtherGuy);
             } 
             // Slime is already in our line. Transfer hat (note the cooldown between hat transfers)
@@ -94,7 +106,7 @@ public class FollowTheLeader : MonoBehaviour
             behindMe = toAdd;
             toAdd.inFrontOfMe = GetComponent<FollowTheLeader>();
         }
-            
+        
     }
 
     public void ReparentLine(FollowTheLeader newLeader)
@@ -120,7 +132,13 @@ public class FollowTheLeader : MonoBehaviour
         newLeader.behindMe = GetComponent<FollowTheLeader>();
         inFrontOfMe = newLeader;
 
-        // stop movement
-        newLeader.GetComponent<ClickMoveTowards>().moveTo = newLeader.transform.position;
+        if (collisionStopsMovement) {
+            // stop movement from other script
+            ClickMoveTowards timeToStop = newLeader.GetComponent<ClickMoveTowards>();
+            timeToStop.moveTo = newLeader.transform.position;
+            timeToStop.movementIndicator.transform.position = new Vector3(timeToStop.moveTo.x, timeToStop.movementIndicator.transform.position.y, timeToStop.moveTo.z);
+        }
+        
+        
     }
 }

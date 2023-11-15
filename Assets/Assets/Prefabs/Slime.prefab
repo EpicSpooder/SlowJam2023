@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 6425969536376752660}
   - component: {fileID: 1111877756186941123}
   - component: {fileID: 1710875006208454729}
-  - component: {fileID: 1639718074855237299}
   - component: {fileID: 2391061473839487401}
+  - component: {fileID: 1639718074855237299}
   - component: {fileID: 7284592220276493609}
   - component: {fileID: 3482280152609407659}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,24 +102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theCamera: {fileID: 0}
---- !u!114 &1639718074855237299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038542542307472838}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d64224e7d16366e4c9b22a5d5af5c2a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  floor: {fileID: 0}
-  movementIndicator: {fileID: 0}
-  moveSpeed: 2
-  moveTo: {x: 0, y: 0, z: 0}
-  canHoldMouseDown: 1
-  keepYPos: 1
 --- !u!114 &2391061473839487401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,11 +114,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3448018452af09948a064dab4e07461e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 3
   followDistance: 3
   inFrontOfMe: {fileID: 0}
   behindMe: {fileID: 0}
   lineLeader: 0
+  keepYPos: 1
+  collisionStopsMovement: 1
+--- !u!114 &1639718074855237299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038542542307472838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64224e7d16366e4c9b22a5d5af5c2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floor: {fileID: 0}
+  movementIndicator: {fileID: 0}
+  moveSpeed: 3
+  moveTo: {x: 0, y: 0, z: 0}
+  canHoldMouseDown: 1
   keepYPos: 1
 --- !u!136 &7284592220276493609
 CapsuleCollider:

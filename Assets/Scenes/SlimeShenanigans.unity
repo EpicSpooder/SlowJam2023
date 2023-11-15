@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &210261499 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3057607557851470480, guid: 473c6b03a62b3b44baf167acea461649, type: 3}
-  m_PrefabInstance: {fileID: 1977410752599513457}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &489140534
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +316,7 @@ Transform:
   m_GameObject: {fileID: 959621738}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6427876, y: -0, z: -0, w: 0.7660445}
-  m_LocalPosition: {x: 0, y: 12, z: -2}
+  m_LocalPosition: {x: 0, y: 10, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -359,6 +354,7 @@ MonoBehaviour:
   behindMe: {fileID: 0}
   lineLeader: 0
   keepYPos: 1
+  collisionStopsMovement: 1
 --- !u!1 &1562629127
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,11 +642,11 @@ PrefabInstance:
     - target: {fileID: 1639718074855237299, guid: 91ad6e6b5eeecfc489be872bb9fe1c8b, type: 3}
       propertyPath: floor
       value: 
-      objectReference: {fileID: 1562629127}
+      objectReference: {fileID: 0}
     - target: {fileID: 1639718074855237299, guid: 91ad6e6b5eeecfc489be872bb9fe1c8b, type: 3}
       propertyPath: movementIndicator
       value: 
-      objectReference: {fileID: 210261499}
+      objectReference: {fileID: 0}
     - target: {fileID: 2038542542307472838, guid: 91ad6e6b5eeecfc489be872bb9fe1c8b, type: 3}
       propertyPath: m_Name
       value: Player

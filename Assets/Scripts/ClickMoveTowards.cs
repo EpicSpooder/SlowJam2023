@@ -14,13 +14,14 @@ public class ClickMoveTowards : MonoBehaviour
     public bool keepYPos = true;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (floor == null)
             floor = GameObject.Find("Floor");
         if (movementIndicator == null)
             movementIndicator = GameObject.Find("Move Indicator");
         Debug.Assert(floor != null);
+        Debug.Assert(movementIndicator != null);
         Debug.Assert(moveSpeed > 0);
     }
 
@@ -56,7 +57,7 @@ public class ClickMoveTowards : MonoBehaviour
             moveTo.y = transform.position.y;
         // draw movement indicator
         if (movementIndicator != null)
-            movementIndicator.transform.position = moveTo;
+            movementIndicator.transform.position = new Vector3(moveTo.x, movementIndicator.transform.position.y, moveTo.z);
         // Move the object to the destination, at a designated speed
         if (transform.position != moveTo)
             transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, moveTo, 0.5f), moveSpeed * Time.deltaTime);
