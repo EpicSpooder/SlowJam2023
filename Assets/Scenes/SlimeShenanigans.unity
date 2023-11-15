@@ -201,7 +201,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -99, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.5, y: 0.1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -290,7 +290,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   followDistance: 3
-  inFrontOfMe: {fileID: 983092837}
+  inFrontOfMe: {fileID: 0}
+  behindMe: {fileID: 0}
+  lineLeader: 0
 --- !u!114 &379255586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,9 +305,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d64224e7d16366e4c9b22a5d5af5c2a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floor: {fileID: 0}
-  movementIndicator: {fileID: 0}
+  floor: {fileID: 1562629127}
+  movementIndicator: {fileID: 210261499}
   moveSpeed: 2
+  moveTo: {x: 0, y: 0, z: 0}
   canHoldMouseDown: 1
   keepYPos: 1
 --- !u!114 &379255587
@@ -495,36 +498,15 @@ GameObject:
   - component: {fileID: 707885564}
   - component: {fileID: 707885563}
   - component: {fileID: 707885567}
-  - component: {fileID: 707885562}
+  - component: {fileID: 707885569}
   - component: {fileID: 707885568}
   m_Layer: 0
-  m_Name: Slime
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &707885562
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707885561}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.32000008
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &707885563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,6 +522,7 @@ MonoBehaviour:
   floor: {fileID: 1562629127}
   movementIndicator: {fileID: 210261499}
   moveSpeed: 2
+  moveTo: {x: 0, y: 0, z: 0}
   canHoldMouseDown: 1
   keepYPos: 1
 --- !u!114 &707885564
@@ -638,6 +621,8 @@ MonoBehaviour:
   moveSpeed: 2
   followDistance: 3
   inFrontOfMe: {fileID: 0}
+  behindMe: {fileID: 0}
+  lineLeader: 0
 --- !u!54 &707885568
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -665,6 +650,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &707885569
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707885561}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.32000008
+  m_Height: 0.64
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &959621738
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,6 +686,7 @@ GameObject:
   - component: {fileID: 959621739}
   - component: {fileID: 959621742}
   - component: {fileID: 959621743}
+  - component: {fileID: 959621744}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -772,7 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSens: 0.35
-  lookAtPosition: {fileID: 707885566}
+  lookAtPosition: {fileID: 0}
 --- !u!114 &959621743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,8 +795,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  followDistance: 25
-  inFrontOfMe: {fileID: 707885561}
+  followDistance: 15
+  inFrontOfMe: {fileID: 707885567}
+  behindMe: {fileID: 0}
+  lineLeader: 0
+--- !u!114 &959621744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959621738}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64224e7d16366e4c9b22a5d5af5c2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floor: {fileID: 0}
+  movementIndicator: {fileID: 0}
+  moveSpeed: 1
+  moveTo: {x: 0, y: 0, z: 0}
+  canHoldMouseDown: 1
+  keepYPos: 1
 --- !u!1 &983092837
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +901,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   followDistance: 3
-  inFrontOfMe: {fileID: 707885561}
+  inFrontOfMe: {fileID: 0}
+  behindMe: {fileID: 0}
+  lineLeader: 0
 --- !u!114 &983092841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,9 +916,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d64224e7d16366e4c9b22a5d5af5c2a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floor: {fileID: 0}
-  movementIndicator: {fileID: 0}
+  floor: {fileID: 1562629127}
+  movementIndicator: {fileID: 210261499}
   moveSpeed: 2
+  moveTo: {x: 0, y: 0, z: 0}
   canHoldMouseDown: 1
   keepYPos: 1
 --- !u!114 &983092842
@@ -1054,7 +1086,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   followDistance: 3
-  inFrontOfMe: {fileID: 379255582}
+  inFrontOfMe: {fileID: 0}
+  behindMe: {fileID: 0}
+  lineLeader: 0
 --- !u!114 &990252259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1067,9 +1101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d64224e7d16366e4c9b22a5d5af5c2a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floor: {fileID: 0}
-  movementIndicator: {fileID: 0}
+  floor: {fileID: 1562629127}
+  movementIndicator: {fileID: 210261499}
   moveSpeed: 2
+  moveTo: {x: 0, y: 0, z: 0}
   canHoldMouseDown: 1
   keepYPos: 1
 --- !u!114 &990252260

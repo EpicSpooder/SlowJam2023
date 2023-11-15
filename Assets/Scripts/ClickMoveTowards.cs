@@ -8,7 +8,8 @@ public class ClickMoveTowards : MonoBehaviour
     public GameObject floor;
     public GameObject movementIndicator;
     public float moveSpeed = 1f;
-    private Vector3 moveTo;
+    [HideInInspector]
+    public Vector3 moveTo;
     public bool canHoldMouseDown = true;
     public bool keepYPos = true;
 
@@ -36,9 +37,6 @@ public class ClickMoveTowards : MonoBehaviour
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, Mathf.Infinity, 1);
             if (hit && hitInfo.transform.gameObject.Equals(floor))
                 moveTo = hitInfo.point;
-            // draw movment indicator
-            if (movementIndicator != null)
-                movementIndicator.transform.position = moveTo;
         }
         // Control method 2: click and hold to move player to the mouse position
         else if (canHoldMouseDown && Input.GetMouseButton(0)) {
@@ -46,13 +44,14 @@ public class ClickMoveTowards : MonoBehaviour
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, Mathf.Infinity, 1);
             if (hit && hitInfo.transform.gameObject.Equals(floor))
                 moveTo = hitInfo.point;
-            if (movementIndicator != null)
-                movementIndicator.transform.position = moveTo;
         }
     }
 
     private void MoveToPoint()
     {
+        // draw movement indicator
+        if (movementIndicator != null)
+            movementIndicator.transform.position = moveTo;
         // correct the Y position of the destination if we want the object to maintain its previous Y
         if (keepYPos)
             moveTo.y = transform.position.y;
