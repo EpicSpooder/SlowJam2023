@@ -19,7 +19,7 @@ public class ClickMoveTowards : MonoBehaviour
         if (floor == null)
             floor = GameObject.Find("Floor");
         if (movementIndicator == null)
-            floor = GameObject.Find("Move Indicator");
+            movementIndicator = GameObject.Find("Move Indicator");
         Debug.Assert(floor != null);
         Debug.Assert(moveSpeed > 0);
     }
