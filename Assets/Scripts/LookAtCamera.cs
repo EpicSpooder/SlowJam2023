@@ -9,7 +9,7 @@ public class LookAtCamera : MonoBehaviour
     void Start()
     {
         if (theCamera == null)
-            theCamera = FindObjectOfType<Camera>();
+            theCamera = Camera.main;
         Debug.Assert(theCamera != null);
     }
 
