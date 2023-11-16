@@ -17,6 +17,21 @@ namespace AK
         static const AkUniqueID MUSIC_MENU = 1598298728U;
     } // namespace EVENTS
 
+    namespace SWITCHES
+    {
+        namespace MATERIAL
+        {
+            static const AkUniqueID GROUP = 3865314626U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace MATERIAL
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID ENVIRONMENT_VOLUME = 2054307141U;
