@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WwiseSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
@@ -17,4 +18,14 @@
   <WaapiIP>127.0.0.1</WaapiIP>
   <XMLTranslatorTimeout>10</XMLTranslatorTimeout>
   <WaapiTranslatorTimeout>0</WaapiTranslatorTimeout>
+=======
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <WwiseProjectPath>../../SlowJam2023/SlowJam2023_Wwise/SlowJam2023_Wwise.wproj</WwiseProjectPath>
+    <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2022.1.8.8316</WwiseInstallationPathWindows>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+>>>>>>> Stashed changes
 </WwiseSettings>

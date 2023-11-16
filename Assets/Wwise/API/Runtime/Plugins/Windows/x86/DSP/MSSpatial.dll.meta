@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: a33f2a0ca3652714bb3a136a6b6d6f5b
+=======
+guid: 06c1d755a7a43764e80811c8c523dd29
+>>>>>>> Stashed changes
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2

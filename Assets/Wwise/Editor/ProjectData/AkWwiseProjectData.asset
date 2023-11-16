@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 6d7caa62d83190b47ba5617168085568, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: c69552a9d7001a34da8887cc144a89e6, type: 3}
+>>>>>>> Stashed changes
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
@@ -20,11 +24,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< Updated upstream
       guid: 11bafb26a869b14cbabcb6933b9859f8
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 11bafb26a869b14cbabcb6933b9859f8
     GuidInternal: 
     m_lastTime: -8585015112814007198
+=======
+      guid: 456de9126711344581e3c24d088ba7c6
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: 456de9126711344581e3c24d088ba7c6
+    GuidInternal: 
+    m_lastTime: -8585016615163476284
+>>>>>>> Stashed changes
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -299,11 +311,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< Updated upstream
       guid: 2fadaea4cafc3242b48284b0ec3fa5b8
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2fadaea4cafc3242b48284b0ec3fa5b8
     GuidInternal: 
     m_lastTime: -8585015112813647006
+=======
+      guid: c23b7e426e675b4981ef45fa68b1a13d
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: c23b7e426e675b4981ef45fa68b1a13d
+    GuidInternal: 
+    m_lastTime: -8585016615163427702
+>>>>>>> Stashed changes
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -314,7 +334,11 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
+<<<<<<< Updated upstream
         guid: 2fadaea4cafc3242b48284b0ec3fa5b8
+=======
+        guid: c23b7e426e675b4981ef45fa68b1a13d
+>>>>>>> Stashed changes
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -327,11 +351,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< Updated upstream
       guid: a8983b1fccc5ba43a69d784af6e4a561
     ParentPath: SoundBanks\Default Work Unit
     guid: a8983b1fccc5ba43a69d784af6e4a561
     GuidInternal: 
     m_lastTime: -8585015112813909093
+=======
+      guid: b02511342b0d0548ac71f868773d6d58
+    ParentPath: SoundBanks\Default Work Unit
+    guid: b02511342b0d0548ac71f868773d6d58
+    GuidInternal: 
+    m_lastTime: -8585016615163317677
+>>>>>>> Stashed changes
     List: []
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -341,11 +373,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< Updated upstream
       guid: caedc8ea137d5144a6b89f8ac46ab85b
     ParentPath: Events\Default Work Unit
     guid: caedc8ea137d5144a6b89f8ac46ab85b
     GuidInternal: 
     m_lastTime: -8585015112813957156
+=======
+      guid: f7d31f7def1c53448ef4f046dc9ea7e0
+    ParentPath: Events\Default Work Unit
+    guid: f7d31f7def1c53448ef4f046dc9ea7e0
+    GuidInternal: 
+    m_lastTime: -8585016615163147635
+>>>>>>> Stashed changes
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
@@ -355,11 +395,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< Updated upstream
       guid: 1f008e0c21da4441bb90fb12e453f2e0
     ParentPath: Game Parameters\Default Work Unit
     guid: 1f008e0c21da4441bb90fb12e453f2e0
     GuidInternal: 
     m_lastTime: -8585015112813821217
+=======
+      guid: 31a9e9f758146444b17ffb22418dff0c
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 31a9e9f758146444b17ffb22418dff0c
+    GuidInternal: 
+    m_lastTime: -8585016615163107611
+>>>>>>> Stashed changes
     List: []
   - PhysicalPath: Game Parameters\Factory Soundseed Air Game Syncs.wwu
     PathAndIcons:
@@ -522,11 +570,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< Updated upstream
       guid: 15be18a801eaeb4cb4218a30a1474460
     ParentPath: States\Default Work Unit
     guid: 15be18a801eaeb4cb4218a30a1474460
     GuidInternal: 
     m_lastTime: -8585015112813527822
+=======
+      guid: a9cf415730375145898f3c8e463d2cbc
+    ParentPath: States\Default Work Unit
+    guid: a9cf415730375145898f3c8e463d2cbc
+    GuidInternal: 
+    m_lastTime: -8585016615163354993
+>>>>>>> Stashed changes
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -536,11 +592,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< Updated upstream
       guid: 5ac9fddd3a684c41a66d8ff5adc64738
     ParentPath: Switches\Default Work Unit
     guid: 5ac9fddd3a684c41a66d8ff5adc64738
     GuidInternal: 
     m_lastTime: -8585015112813577403
+=======
+      guid: ed243eeafe55cd4f850c2ae4cce83af4
+    ParentPath: Switches\Default Work Unit
+    guid: ed243eeafe55cd4f850c2ae4cce83af4
+    GuidInternal: 
+    m_lastTime: -8585016615163397677
+>>>>>>> Stashed changes
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -550,11 +614,19 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
+<<<<<<< Updated upstream
       guid: 3eb0802f9b3d7346b00b7718fd1e6e03
     ParentPath: Triggers\Default Work Unit
     guid: 3eb0802f9b3d7346b00b7718fd1e6e03
     GuidInternal: 
     m_lastTime: -8585015112813270237
+=======
+      guid: f0318c25155f8d45a750d601650161bf
+    ParentPath: Triggers\Default Work Unit
+    guid: f0318c25155f8d45a750d601650161bf
+    GuidInternal: 
+    m_lastTime: -8585016615163227705
+>>>>>>> Stashed changes
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
