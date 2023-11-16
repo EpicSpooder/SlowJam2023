@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player" ID="{A940E386-A305-4FA0-90CF-89006D03FACE}" ShortID="355356463"/>
+				<Folder Name="UI" ID="{29A0D9CF-8866-41B4-AC47-E2B38AB1AB13}" ShortID="724514317"/>
+				<Folder Name="Music" ID="{622DD3AF-E8BC-40B2-BB97-59425B54F16F}" ShortID="71089383">
+					<ChildrenList>
+						<Event Name="Music_Menu" ID="{F010B6E9-EC58-4122-ABA5-D22BCB5130C2}">
+							<ChildrenList>
+								<Action Name="" ID="{714C1157-980E-4259-B3E2-2470A243338B}" ShortID="163328935">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Menu" ID="{6C71C75B-0323-4655-B116-025E2CC2B836}" WorkUnitID="{46B9774E-728F-4D2E-9F20-FD7714120E65}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Music_Forest" ID="{830FDF8A-5192-49FC-92AD-CC91AEB3441D}">
+							<ChildrenList>
+								<Action Name="" ID="{B31DE1D0-50A8-4825-B285-9DB00FB08021}" ShortID="178888511">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Forest Level" ID="{0E2992BB-F2A7-41F9-A3BD-42E97CB7A168}" WorkUnitID="{46B9774E-728F-4D2E-9F20-FD7714120E65}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
