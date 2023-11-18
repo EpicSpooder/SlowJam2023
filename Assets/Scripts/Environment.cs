@@ -9,7 +9,8 @@ public class Environment : MonoBehaviour
     public float width = 100f;
     public float scale = 20.0f;
     public float rockscale = 75.0f;
-    public float lakescale = 5f;
+    public float lakescale = 3f;
+    public float campscale = 5f;
     public float xOffset;
     public float zOffset;
     public GameObject outterWall;
@@ -101,18 +102,20 @@ public class Environment : MonoBehaviour
                 float xCoord = randomorg + x / width * lakescale;
                 float yCoord = randomorg + y / length * lakescale;
                 float sample = Mathf.PerlinNoise(xCoord, yCoord);
-                if (sample == Mathf.Clamp(sample, .8f, 1f))
+                if (sample == Mathf.Clamp(sample, .7f, 1f))
                 {
+                    Debug.Log("Placing Lake tile at " + x + ", " + y);
                     map[(int)y * (int)width + (int)x] = 6;
                     for(int i = 0; i < 12; i++)
                     {
                         for(int j = 0; j < 12; j++)
                         {
-                            if(j + y < length && i + x < width && j + y >= 0 && i + x >= 0)
+                            //Debug.Log("iterating");
+                            if(j + y < length - 6 && i + x < width - 6 && j + y >= 6 && i + x >= 6)
                             {
                                 if(map[(int)(j + y - 6) * (int)width + (int)(i + x - 6)] != 6)
                                 {
-                                    map[(int)(j + y - 6) * (int)width + (int)(i + x -6)] = 0;
+                                    map[(int)(j + y - 6) * (int)width + (int)(i + x - 6)] = 0;
                                 }
                             }
                         }
@@ -122,6 +125,44 @@ public class Environment : MonoBehaviour
             }
         y++;
         }
+        y = 0f;
+        // layer 4: Camp!
+        Debug.Log("Placing campsite");
+        while (y < length)
+        {
+            float x = 0f;
+            while (x < width)
+            {
+                float xCoord = randomorg + x / width * campscale;
+                float yCoord = randomorg + y / length * campscale;
+                float sample = Mathf.PerlinNoise(xCoord, yCoord);
+                if (sample == Mathf.Clamp(sample, .9f, 1f))
+                {
+                    int selection = Random.Range(0,5);
+                    switch (selection)
+                    {
+                        case 0:
+                            map[(int)y * (int)width + (int)x] = 7;
+                            break;
+                        case 1:
+                            map[(int)y * (int)width + (int)x] = 8;
+                            break;
+                        case 2:
+                            map[(int)y * (int)width + (int)x] = 9;
+                            break;
+                        case 3:
+                            map[(int)y * (int)width + (int)x] = 10;
+                            break;
+                        case 4:
+                            map[(int)y * (int)width + (int)x] = 11;
+                            break;
+                    }
+                }
+                x++;
+            }
+            y++;
+        }
+
                   //do nothing;
         // Copy the pixel data to the texture and load it into the GPU.
         //noiseTex.SetPixels(pix);
