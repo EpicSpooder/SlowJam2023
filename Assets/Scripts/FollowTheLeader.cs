@@ -245,6 +245,32 @@ public class FollowTheLeader : MonoBehaviour
             numSlimesInLine--;
             Destroy(gameObject);
 
+            //ADD TO UI SLIME CANVAS.
+            // Find the object with the specified tag
+            GameObject uiSlimeCanvas = GameObject.FindWithTag("UISlimeCanvas");
+
+            // Check if the object was found
+            if (uiSlimeCanvas != null)
+            {
+                    // Try to get the script component
+                    SpawnAndParent spawner = uiSlimeCanvas.GetComponent<SpawnAndParent>();
+
+                    // Check if the script component was found
+                    if (spawner != null)
+                    {
+                        // Call the method on the script
+                        spawner.SpawnAndParentObject();
+                    }
+                    else
+                    {
+                        Debug.LogError("SpawnAndParent script not found on UISlimeCanvas.");
+                    }
+            }
+            else
+            {
+                Debug.LogError("UISlimeCanvas object not found.");
+            }
+
         }
         return numMatchingSlimes;
     }

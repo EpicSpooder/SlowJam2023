@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4906624283344092033}
   - component: {fileID: 6337700134956920393}
   - component: {fileID: 5748367353992658028}
+  - component: {fileID: 2179473598709102460}
   m_Layer: 5
   m_Name: UI Slime
   m_TagString: Untagged
@@ -29,7 +30,7 @@ RectTransform:
   m_GameObject: {fileID: 6836723751435010702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a2a854de12c719a40a5e76b723b0d25c, type: 3}
+  m_Sprite: {fileID: -622356253, guid: 965c0c3acecb91c4ca151387c431e7a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -149,3 +150,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2179473598709102460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6836723751435010702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129f1f79a2b47b545b30876a9435cccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pulsationFrequency: 1
+  pulsationAmplitude: 0.1
+  randomOffsetRange: 0.1
