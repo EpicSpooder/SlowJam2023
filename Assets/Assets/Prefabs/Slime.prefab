@@ -102,10 +102,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  followDistance: 3
+  followDistance: 3.5
   inFrontOfMe: {fileID: 0}
   behindMe: {fileID: 0}
   lineLeader: 0
+  leaderSwapCooldown: 2
   keepYPos: 1
   collisionStopsMovement: 1
 --- !u!114 &1639718074855237299

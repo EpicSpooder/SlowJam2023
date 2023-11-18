@@ -13,7 +13,7 @@ public class FollowTheLeader : MonoBehaviour
     public FollowTheLeader behindMe = null;
     [HideInInspector]
     public bool lineLeader;
-    public static float leaderSwapCooldown = 1.25f;
+    public float leaderSwapCooldown = 1.5f;
     private float leaderSwapTime;
     private FollowTheLeader hat;
     public bool keepYPos = true;
@@ -24,6 +24,7 @@ public class FollowTheLeader : MonoBehaviour
     private Color myColor = Color.clear;
     private bool ghosting = false;
     public static int totalPoints = 0;
+    private Vector3 lastDirection = Vector3.zero;
 
     void Start()
     {
@@ -140,9 +141,14 @@ public class FollowTheLeader : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, new Vector3(inFrontOfMe.transform.position.x, transform.position.y, inFrontOfMe.transform.position.z), 0.5f), moveSpeed * Time.deltaTime);
             else
                 transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, inFrontOfMe.transform.position, 0.5f), moveSpeed * Time.deltaTime);
+            
+            // keep the direction we were traveling for use when we exit ghosting/join the chain
+            if (ghosting)    
+                lastDirection = (inFrontOfMe.transform.position - transform.position).normalized;
         } 
         else if (ghosting)
         {
+            transform.position += lastDirection * inFrontOfMe.followDistance * 0.75f; 
             ToggleGhost();
         }
     }
