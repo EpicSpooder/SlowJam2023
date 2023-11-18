@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -217,6 +217,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &638088819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 638088821}
+  - component: {fileID: 638088820}
+  m_Layer: 0
+  m_Name: Environment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &638088820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638088819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548a58289fb154380bf650b4e5413d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seed: 42
+  length: 200
+  width: 200
+  scale: 20
+  rockscale: 75
+  lakescale: 3
+  campscale: 100
+  xOffset: 0
+  zOffset: 0
+  outterWall: {fileID: 6288390749444946074, guid: 4d6a0ef7bc0193541978d6502c769952, type: 3}
+  theVoid: {fileID: 1734338012631041910, guid: 74cf20d0642aa10d6a28e809184638e1, type: 3}
+  grass: {fileID: 3310980611972009288, guid: aa0f9fe91142ec23ea95c8af722735c0, type: 3}
+  flower: {fileID: 3178817822239819911, guid: 561d00c64c75c1efa84068a90ed8c020, type: 3}
+  tree: {fileID: 6288390749444946074, guid: 4d6a0ef7bc0193541978d6502c769952, type: 3}
+  boulder: {fileID: 6978277704667131329, guid: 3d8866b48720ef68787610a2cf1d84e5, type: 3}
+  rock: {fileID: 633828744525138213, guid: 58bd84199bead71fea7e3a1773fd2fe1, type: 3}
+  lake: {fileID: 7753752532611246347, guid: e9279fb7e701b6ffe945af32315761d7, type: 3}
+  tent: {fileID: 1395385397752854176, guid: 0a49990c9e962a39f8acbbede1b0054e, type: 3}
+  pickaxe: {fileID: 4180666737003973341, guid: 7ead030e5a9b86f3c864f610c88f97f1, type: 3}
+  helmet: {fileID: 3841092314632789835, guid: d3cfd65fb2e38b555a0e6a0f32f409be, type: 3}
+  campfire: {fileID: 5909916579692424719, guid: 473150adef2c085a9b43ed6b0e2b9a7f, type: 3}
+  minecarttrack: {fileID: 8188557008332038162, guid: ae9f7d69f7881f0e79bec82bb742ab38, type: 3}
+--- !u!4 &638088821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638088819}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4146695, y: -4.7000914, z: -3.382516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &755481994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -435,6 +501,7 @@ MonoBehaviour:
   inFrontOfMe: {fileID: 0}
   behindMe: {fileID: 0}
   lineLeader: 0
+  leaderSwapCooldown: 1.5
   keepYPos: 1
   collisionStopsMovement: 1
 --- !u!1001 &1456134540
@@ -1366,3 +1433,4 @@ SceneRoots:
   - {fileID: 2049250459}
   - {fileID: 1456134540}
   - {fileID: 1866381519}
+  - {fileID: 638088821}

@@ -158,6 +158,7 @@ MonoBehaviour:
   scale: 20
   rockscale: 75
   lakescale: 3
+  campscale: 100
   xOffset: 0
   zOffset: 0
   outterWall: {fileID: 6288390749444946074, guid: 4d6a0ef7bc0193541978d6502c769952, type: 3}
