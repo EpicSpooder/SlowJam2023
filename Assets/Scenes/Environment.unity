@@ -153,19 +153,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seed: 42
-  length: 100
-  width: 100
+  length: 200
+  width: 200
   scale: 20
+  rockscale: 75
+  lakescale: 3
   xOffset: 0
   zOffset: 0
-  obj: {fileID: 919132149155446097, guid: 88ef62ad5343cf145ac1db56c6a48a81, type: 3}
-  outerWall: {fileID: 6288390749444946074, guid: 4d6a0ef7bc0193541978d6502c769952, type: 3}
-  tree: {fileID: 6288390749444946074, guid: 4d6a0ef7bc0193541978d6502c769952, type: 3}
+  outterWall: {fileID: 6288390749444946074, guid: 4d6a0ef7bc0193541978d6502c769952, type: 3}
+  theVoid: {fileID: 1734338012631041910, guid: 74cf20d0642aa10d6a28e809184638e1, type: 3}
   grass: {fileID: 3310980611972009288, guid: aa0f9fe91142ec23ea95c8af722735c0, type: 3}
+  flower: {fileID: 3178817822239819911, guid: 561d00c64c75c1efa84068a90ed8c020, type: 3}
+  tree: {fileID: 6288390749444946074, guid: 4d6a0ef7bc0193541978d6502c769952, type: 3}
   boulder: {fileID: 6978277704667131329, guid: 3d8866b48720ef68787610a2cf1d84e5, type: 3}
   rock: {fileID: 633828744525138213, guid: 58bd84199bead71fea7e3a1773fd2fe1, type: 3}
-  noiseTex: {fileID: 0}
-  map: 
+  lake: {fileID: 7753752532611246347, guid: e9279fb7e701b6ffe945af32315761d7, type: 3}
+  tent: {fileID: 1395385397752854176, guid: 0a49990c9e962a39f8acbbede1b0054e, type: 3}
+  pickaxe: {fileID: 4180666737003973341, guid: 7ead030e5a9b86f3c864f610c88f97f1, type: 3}
+  helmet: {fileID: 3841092314632789835, guid: d3cfd65fb2e38b555a0e6a0f32f409be, type: 3}
+  campfire: {fileID: 5909916579692424719, guid: 473150adef2c085a9b43ed6b0e2b9a7f, type: 3}
+  minecarttrack: {fileID: 8188557008332038162, guid: ae9f7d69f7881f0e79bec82bb742ab38, type: 3}
 --- !u!4 &718407910
 Transform:
   m_ObjectHideFlags: 0
