@@ -23,6 +23,7 @@ public class FollowTheLeader : MonoBehaviour
     private static int numSlimesInLine = 1;
     private Color myColor = Color.clear;
     private bool ghosting = false;
+    public static int totalPoints = 0;
 
     void Start()
     {
@@ -245,5 +246,6 @@ public class FollowTheLeader : MonoBehaviour
     public void AddPoints(int pointsToAdd)
     {
         Debug.Log("player gained " + pointsToAdd + " points");
+        totalPoints += pointsToAdd;
     }
 }
