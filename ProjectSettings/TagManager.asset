@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Hat
   - UISlimeCanvas
+  - Music
+  - UISlime
   layers:
   - Default
   - TransparentFX
