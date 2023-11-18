@@ -5,7 +5,9 @@ using static UnityEngine.GraphicsBuffer;
 
 public class ClickMoveTowards : MonoBehaviour
 {
+    [HideInInspector]
     public GameObject floor;
+    [HideInInspector]
     public GameObject movementIndicator;
     public float moveSpeed = 1f;
     [HideInInspector]
