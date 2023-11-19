@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class FollowTheLeader : MonoBehaviour
@@ -17,6 +18,7 @@ public class FollowTheLeader : MonoBehaviour
     private float leaderSwapTime;
     private FollowTheLeader hat;
     public bool keepYPos = true;
+    private float myYPos = 0f;
     public bool collisionStopsMovement = true;
     private bool hasClickMove = true;
     public static int pointsPerSlime = 10;
@@ -25,6 +27,7 @@ public class FollowTheLeader : MonoBehaviour
     private bool ghosting = false;
     public static int totalPoints = 0;
     private Vector3 lastDirection = Vector3.zero;
+    private TextMeshProUGUI score = null;
 
     void Start()
     {
@@ -41,7 +44,10 @@ public class FollowTheLeader : MonoBehaviour
             myColor = myRenderer.color;
             Debug.Assert(!myColor.Equals(Color.clear));
         }
-        
+
+        score = FindFirstObjectByType<Canvas>().GetComponentInChildren<TextMeshProUGUI>();
+        Debug.Assert(score != null);
+        score.text = "Score: " + totalPoints;
 
         // Initial player slime MUST be named "Player" in the scene object hierarchy or have the player tag
         // Warning: having multiple ^ might break things!
@@ -60,7 +66,8 @@ public class FollowTheLeader : MonoBehaviour
             else
                 hasClickMove = false;
         }
-         
+
+        myYPos = transform.position.y;
     }
 
     void Update()
@@ -77,7 +84,9 @@ public class FollowTheLeader : MonoBehaviour
             if (!ghosting && inFrontOfMe != null && inFrontOfMe.inFrontOfMe != null && (behindMe == null || !behindMe.myColor.Equals(myColor)))
                 Match3(0, myColor);
         }
-            
+
+        if (keepYPos)
+            transform.position = new Vector3(transform.position.x, myYPos, transform.position.z);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -137,10 +146,10 @@ public class FollowTheLeader : MonoBehaviour
         if (Vector3.Distance(inFrontOfMe.transform.position, transform.position) > followDistance)
         {
             // correct the Y position of the destination if we want the object to maintain its previous Y
-            if (keepYPos)
-                transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, new Vector3(inFrontOfMe.transform.position.x, transform.position.y, inFrontOfMe.transform.position.z), 0.5f), moveSpeed * Time.deltaTime);
-            else
-                transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, inFrontOfMe.transform.position, 0.5f), moveSpeed * Time.deltaTime);
+            //if (keepYPos)
+                //transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, new Vector3(inFrontOfMe.transform.position.x, transform.position.y, inFrontOfMe.transform.position.z), 0.5f), moveSpeed * Time.deltaTime);
+            //else
+            transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, inFrontOfMe.transform.position, 0.5f), moveSpeed * Time.deltaTime);
             
             // keep the direction we were traveling for use when we exit ghosting/join the chain
             if (ghosting)    
@@ -148,7 +157,7 @@ public class FollowTheLeader : MonoBehaviour
         } 
         else if (ghosting)
         {
-            transform.position += lastDirection * inFrontOfMe.followDistance * 0.75f; 
+            transform.position = transform.position + 0.75f * lastDirection * inFrontOfMe.followDistance;
             ToggleGhost();
         }
     }
@@ -259,7 +268,7 @@ public class FollowTheLeader : MonoBehaviour
                     if (spawner != null)
                     {
                         // Call the method on the script
-                        spawner.SpawnAndParentObject();
+                        spawner.SpawnAndParentObject(myColor);
                     }
                     else
                     {
@@ -277,7 +286,8 @@ public class FollowTheLeader : MonoBehaviour
 
     public void AddPoints(int pointsToAdd)
     {
-        Debug.Log("player gained " + pointsToAdd + " points");
+        //Debug.Log("player gained " + pointsToAdd + " points");
         totalPoints += pointsToAdd;
+        score.text = "Score: " + totalPoints;
     }
 }
