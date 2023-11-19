@@ -109,7 +109,9 @@ MonoBehaviour:
   inFrontOfMe: {fileID: 0}
   behindMe: {fileID: 0}
   lineLeader: 0
-  keepYPos: 0
+  leaderSwapCooldown: 1.5
+  keepYPos: 1
+  collisionStopsMovement: 1
 --- !u!1 &7580555712741408313 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: ebec4c576458a752cbb071a3828fcf0f, type: 3}

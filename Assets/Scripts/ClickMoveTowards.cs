@@ -13,7 +13,7 @@ public class ClickMoveTowards : MonoBehaviour
     [HideInInspector]
     public Vector3 moveTo;
     public bool canHoldMouseDown = true;
-    public bool keepYPos = true;
+    //public bool keepYPos = true;
 
     // Start is called before the first frame update
     void Awake()
@@ -55,8 +55,8 @@ public class ClickMoveTowards : MonoBehaviour
     private void MoveToPoint()
     {
         // correct the Y position of the destination if we want the object to maintain its previous Y
-        if (keepYPos)
-            moveTo.y = transform.position.y;
+        //if (keepYPos)
+            //moveTo.y = transform.position.y;
         // draw movement indicator
         if (movementIndicator != null)
             movementIndicator.transform.position = new Vector3(moveTo.x, movementIndicator.transform.position.y, moveTo.z);

@@ -8,6 +8,7 @@ public class CameraControls : MonoBehaviour
     public float rotateSens = 1.5f;
     [HideInInspector]
     public Transform lookAtPosition = null;
+    public bool keepYpos = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,10 @@ public class CameraControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(lookAtPosition);
+        if (keepYpos)
+            transform.LookAt(new Vector3(lookAtPosition.transform.position.x, 1, lookAtPosition.transform.position.z));
+        else
+            transform.LookAt(lookAtPosition);
 
         // Camera Tumble
         if (Input.GetMouseButton(1))
@@ -42,6 +46,11 @@ public class CameraControls : MonoBehaviour
                 ComputeHorizontalOrbit(1f);
             }
 
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 
