@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="SlowJam2023_WwiseProject" GUID="{174B4E66-F59B-4BC1-B8FA-94C11D530F28}" Generator="2022.1.8.8316"/>
+	<CacheRoot>../../../../SlowJam2023_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{934F27BB-75C7-462D-A910-8B6543577E82}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../SlowJam2023_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{E0A5F421-B680-47D9-82AE-3897DC1E9404}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../SlowJam2023_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{B004E8F3-F692-4F9F-AA19-9C4391662621}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{1C378763-078D-7D3F-CA62-AC5BA313FE39}</FileHash>
+</ProjectInfo>
