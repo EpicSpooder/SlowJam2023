@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d46729507e1cd144ba838a86dde3b2c7, type: 3}
+  m_Name: 0E18E865-B5BA-4F87-83D5-7EAE90604FFE
+  m_EditorClassIdentifier: 
+  objectName: Nav_Forward
+  id: 3621467206
+  guid: 0E18E865-B5BA-4F87-83D5-7EAE90604FFE

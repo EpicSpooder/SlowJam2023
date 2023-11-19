@@ -153,33 +153,176 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B18CBFA2-30A6-C731-FA65-35D462508274}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9A4922B6-2EB1-594C-C0F7-C96E8745C3A2}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="470881686" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Slime Game Demo 3.0.wav</ShortName>
-					<CachePath>SFX/Slime Game Demo 3.0_D79FB2B7.wem</CachePath>
+				<File Id="8426787" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Stone\Land_Stone-Variation3.wav</ShortName>
+					<CachePath>SFX/Land_Stone/Land_Stone-Variation3_10C4C929.wem</CachePath>
 				</File>
-				<File Id="693676831" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Slime Game Demo 1.0.wav</ShortName>
-					<CachePath>SFX/Slime Game Demo 1.0_D79FB2B7.wem</CachePath>
+				<File Id="260291604" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Menu loop.wav</ShortName>
+					<CachePath>SFX/Menu loop_10C4C929.wem</CachePath>
+				</File>
+				<File Id="347146506" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Stone\Land_Stone-Variation2.wav</ShortName>
+					<CachePath>SFX/Land_Stone/Land_Stone-Variation2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="357027929" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Grass\Land_Grass-Variation1.wav</ShortName>
+					<CachePath>SFX/Land_Grass/Land_Grass-Variation1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="393505334" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Navigate forwards.wav</ShortName>
+					<CachePath>SFX/Navigate forwards_10C4C929.wem</CachePath>
+				</File>
+				<File Id="410789529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Button push generic.wav</ShortName>
+					<CachePath>SFX/Button push generic_10C4C929.wem</CachePath>
+				</File>
+				<File Id="438389392" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Forest theme INTRO.wav</ShortName>
+					<CachePath>SFX/Forest theme INTRO_10C4C929.wem</CachePath>
+				</File>
+				<File Id="443681236" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Jump\Player_Jump-Variation1.wav</ShortName>
+					<CachePath>SFX/Player_Jump/Player_Jump-Variation1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="451811287" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Jump\Player_Jump-Variation2.wav</ShortName>
+					<CachePath>SFX/Player_Jump/Player_Jump-Variation2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="468087129" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Forest theme A'.wav</ShortName>
+					<CachePath>SFX/Forest theme A'_10C4C929.wem</CachePath>
+				</File>
+				<File Id="575808378" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Stone\Land_Stone-Variation1.wav</ShortName>
+					<CachePath>SFX/Land_Stone/Land_Stone-Variation1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="694524066" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Grass\Land_Grass-Variation2.wav</ShortName>
+					<CachePath>SFX/Land_Grass/Land_Grass-Variation2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="941640842" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Jump\Player_Jump-Variation3.wav</ShortName>
+					<CachePath>SFX/Player_Jump/Player_Jump-Variation3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="957696017" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Grass\Land_Grass-Variation3.wav</ShortName>
+					<CachePath>SFX/Land_Grass/Land_Grass-Variation3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1013012491" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Forest theme B.wav</ShortName>
+					<CachePath>SFX/Forest theme B_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1024747270" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Navigate backwards.wav</ShortName>
+					<CachePath>SFX/Navigate backwards_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1035294855" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pause.wav</ShortName>
+					<CachePath>SFX/Pause_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1036478591" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Unpause.wav</ShortName>
+					<CachePath>SFX/Unpause_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1040621577" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Forest theme A.wav</ShortName>
+					<CachePath>SFX/Forest theme A_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="535067836" Name="Hover_button" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1301445487" Name="Button_Generic" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="410789529"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2181728358" Name="Music_Forest" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="470881686"/>
+						<MediaRef Id="468087129"/>
+						<MediaRef Id="1013012491"/>
+						<MediaRef Id="1040621577"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1598298728" Name="Music_Menu" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="693676831"/>
+						<MediaRef Id="260291604"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="647488260" Name="Nav_Backward" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="1024747270"/>
+					</MediaRefs>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="1301445487" Name="Button_Generic"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="3621467206" Name="Nav_Forward" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="393505334"/>
+					</MediaRefs>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="1301445487" Name="Button_Generic"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="3092587493" Name="Pause" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
+					<MediaRefs>
+						<MediaRef Id="1035294855"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1305133589" Name="Player_Jump" DurationType="OneShot" DurationMin="2.0307083" DurationMax="2.0307083">
+					<MediaRefs>
+						<MediaRef Id="443681236"/>
+						<MediaRef Id="451811287"/>
+						<MediaRef Id="941640842"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3629196698" Name="Player_Land" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3865314626" Id="1216965916"/>
+							<MediaRefs>
+								<MediaRef Id="8426787"/>
+								<MediaRef Id="347146506"/>
+								<MediaRef Id="575808378"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3865314626" Id="4248645337" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="357027929"/>
+								<MediaRef Id="694524066"/>
+								<MediaRef Id="957696017"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3412652423" Name="Start_Mode" DurationType="OneShot" DurationMin="3.6923125" DurationMax="3.6923125">
+					<MediaRefs>
+						<MediaRef Id="438389392"/>
+					</MediaRefs>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="3621467206" Name="Nav_Forward"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="3412868374" Name="Unpause" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
+					<MediaRefs>
+						<MediaRef Id="1036478591"/>
 					</MediaRefs>
 				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="3865314626" Name="Material">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4B50D4CA-B5C4-226E-394A-65DC307D706D}</FileHash>
+	<FileHash>{AAA12CD6-0DF6-4453-0397-E6C0AE68D5F1}</FileHash>
 </SoundBanksInfo>

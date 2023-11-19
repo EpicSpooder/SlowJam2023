@@ -13,9 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID HOVER_BUTTON = 535067836U;
+        static const AkUniqueID BUTTON_GENERIC = 1301445487U;
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
         static const AkUniqueID MUSIC_MENU = 1598298728U;
+        static const AkUniqueID NAV_BACKWARD = 647488260U;
+        static const AkUniqueID NAV_FORWARD = 3621467206U;
+        static const AkUniqueID PAUSE = 3092587493U;
+        static const AkUniqueID PLAYER_JUMP = 1305133589U;
+        static const AkUniqueID PLAYER_LAND = 3629196698U;
+        static const AkUniqueID START_MODE = 3412652423U;
+        static const AkUniqueID UNPAUSE = 3412868374U;
     } // namespace EVENTS
 
     namespace SWITCHES

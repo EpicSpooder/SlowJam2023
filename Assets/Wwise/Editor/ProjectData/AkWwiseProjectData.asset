@@ -382,7 +382,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a8983b1fccc5ba43a69d784af6e4a561
     GuidInternal: 
-    m_lastTime: -8585012196406675320
+    m_lastTime: -8585011825017222864
     List:
     - name: Main
       guid: c5c4d4f912b0b44893cf5a9292a9557d
@@ -410,11 +410,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: caedc8ea137d5144a6b89f8ac46ab85b
     GuidInternal: 
-    m_lastTime: -8585012196406884745
+    m_lastTime: -8585011812673413609
     List:
-    - name: Hover_button
-      guid: 085bdf8c6d9e2b47b4d0be7399866de1
-      id: 535067836
+    - name: Button_Generic
+      guid: 20f45c0d96c93d43ab3cc0c8213cc0fe
+      id: 1301445487
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -425,13 +425,13 @@ MonoBehaviour:
       - ElementName: UI
         ObjectType: 4
         guid: cfd9a0296688b441ac47e2b38ab1ab13
-      - ElementName: Hover_button
+      - ElementName: Button_Generic
         ObjectType: 3
-        guid: 085bdf8c6d9e2b47b4d0be7399866de1
-      Path: Events\Default Work Unit\UI\Hover_button
+        guid: 20f45c0d96c93d43ab3cc0c8213cc0fe
+      Path: Events\Default Work Unit\UI\Button_Generic
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1
+      minDuration: 1
     - name: Music
       guid: afd32d62bce8b240bb9759425b54f16f
       id: 3991942870
@@ -467,8 +467,8 @@ MonoBehaviour:
         guid: 8adf0f839251fc4992adcc91aeb3441d
       Path: Events\Default Work Unit\Music\Music_Forest
       maxAttenuation: 0
-      maxDuration: 13.913062
-      minDuration: 13.913062
+      maxDuration: -1
+      minDuration: -1
     - name: Music_Menu
       guid: e9b610f058ec2241aba5d22bcb5130c2
       id: 1598298728
@@ -487,8 +487,68 @@ MonoBehaviour:
         guid: e9b610f058ec2241aba5d22bcb5130c2
       Path: Events\Default Work Unit\Music\Music_Menu
       maxAttenuation: 0
-      maxDuration: 14.76925
-      minDuration: 14.76925
+      maxDuration: -1
+      minDuration: -1
+    - name: Nav_Backward
+      guid: a2e8095bfa47394794c639eec4cac4a5
+      id: 647488260
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: UI
+        ObjectType: 4
+        guid: cfd9a0296688b441ac47e2b38ab1ab13
+      - ElementName: Nav_Backward
+        ObjectType: 3
+        guid: a2e8095bfa47394794c639eec4cac4a5
+      Path: Events\Default Work Unit\UI\Nav_Backward
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Nav_Forward
+      guid: 65e8180ebab5874f83d57eae90604ffe
+      id: 3621467206
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: UI
+        ObjectType: 4
+        guid: cfd9a0296688b441ac47e2b38ab1ab13
+      - ElementName: Nav_Forward
+        ObjectType: 3
+        guid: 65e8180ebab5874f83d57eae90604ffe
+      Path: Events\Default Work Unit\UI\Nav_Forward
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Pause
+      guid: 5493dff0a0131a43b77280a7a129944b
+      id: 3092587493
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: UI
+        ObjectType: 4
+        guid: cfd9a0296688b441ac47e2b38ab1ab13
+      - ElementName: Pause
+        ObjectType: 3
+        guid: 5493dff0a0131a43b77280a7a129944b
+      Path: Events\Default Work Unit\UI\Pause
+      maxAttenuation: 0
+      maxDuration: 1.5
+      minDuration: 1.5
     - name: Player
       guid: 86e340a905a3a04f90cf89006d03face
       id: 1069431850
@@ -506,6 +566,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Player_Jump
+      guid: ddb855a36ff8264b9f09fdc8c1b850dc
+      id: 1305133589
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: Player
+        ObjectType: 4
+        guid: 86e340a905a3a04f90cf89006d03face
+      - ElementName: Player_Jump
+        ObjectType: 3
+        guid: ddb855a36ff8264b9f09fdc8c1b850dc
+      Path: Events\Default Work Unit\Player\Player_Jump
+      maxAttenuation: 0
+      maxDuration: 2.0307083
+      minDuration: 2.0307083
+    - name: Player_Land
+      guid: 4e59b0f018122b4a9857105fb9d1ce29
+      id: 3629196698
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: Player
+        ObjectType: 4
+        guid: 86e340a905a3a04f90cf89006d03face
+      - ElementName: Player_Land
+        ObjectType: 3
+        guid: 4e59b0f018122b4a9857105fb9d1ce29
+      Path: Events\Default Work Unit\Player\Player_Land
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
+    - name: Start_Mode
+      guid: 5ad8fe3753ad3048bb04640f279fee45
+      id: 3412652423
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: UI
+        ObjectType: 4
+        guid: cfd9a0296688b441ac47e2b38ab1ab13
+      - ElementName: Start_Mode
+        ObjectType: 3
+        guid: 5ad8fe3753ad3048bb04640f279fee45
+      Path: Events\Default Work Unit\UI\Start_Mode
+      maxAttenuation: 0
+      maxDuration: 3.6923125
+      minDuration: 3.6923125
     - name: UI
       guid: cfd9a0296688b441ac47e2b38ab1ab13
       id: 1551306167
@@ -523,6 +643,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Unpause
+      guid: 1cd54ec6ee1ebb48b183dd28faedebf8
+      id: 3412868374
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: UI
+        ObjectType: 4
+        guid: cfd9a0296688b441ac47e2b38ab1ab13
+      - ElementName: Unpause
+        ObjectType: 3
+        guid: 1cd54ec6ee1ebb48b183dd28faedebf8
+      Path: Events\Default Work Unit\UI\Unpause
+      maxAttenuation: 0
+      maxDuration: 1.5
+      minDuration: 1.5
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -712,7 +852,7 @@ MonoBehaviour:
     m_lastTime: -8585012232349731988
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000080000000a0000009b0000009c0000009d0000009f000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000009b0000009c0000009d0000009f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

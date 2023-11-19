@@ -5,9 +5,21 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{F9D4C4C5-B012-48B4-93CF-5A9292A9557D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{622DD3AF-E8BC-40B2-BB97-59425B54F16F}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Menu" ID="{F010B6E9-EC58-4122-ABA5-D22BCB5130C2}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Hover_button" ID="{8CDF5B08-9E6D-472B-B4D0-BE7399866DE1}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI" ID="{29A0D9CF-8866-41B4-AC47-E2B38AB1AB13}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause" ID="{F0DF9354-13A0-431A-B772-80A7A129944B}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Button_Generic" ID="{0D5CF420-C996-433D-AB3C-C0C8213CC0FE}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Nav_Backward" ID="{5B09E8A2-47FA-4739-94C6-39EEC4CAC4A5}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Start_Mode" ID="{37FED85A-AD53-4830-BB04-640F279FEE45}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Unpause" ID="{C64ED51C-1EEE-48BB-B183-DD28FAEDEBF8}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{A1BCD282-F770-49B5-957A-FBC22E60ED55}" WorkUnitID="{A1BCD282-F770-49B5-957A-FBC22E60ED55}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Forest" ID="{830FDF8A-5192-49FC-92AD-CC91AEB3441D}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Dynamic Dialogue" ID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" WorkUnitID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Nav_Forward" ID="{0E18E865-B5BA-4F87-83D5-7EAE90604FFE}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player" ID="{A940E386-A305-4FA0-90CF-89006D03FACE}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
