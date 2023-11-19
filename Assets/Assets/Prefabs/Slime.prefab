@@ -9,12 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6425969536376752660}
-  - component: {fileID: 1111877756186941123}
-  - component: {fileID: 1710875006208454729}
+  - component: {fileID: 5579608594443877567}
   - component: {fileID: 2391061473839487401}
   - component: {fileID: 1639718074855237299}
   - component: {fileID: 7284592220276493609}
   - component: {fileID: 3482280152609407659}
+  - component: {fileID: 4869585686929579966}
+  - component: {fileID: 2660374031868999749}
   m_Layer: 2
   m_Name: Slime
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 58.587, z: 0}
---- !u!212 &1111877756186941123
+--- !u!212 &5579608594443877567
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,19 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1710875006208454729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038542542307472838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8735df8ca6a8a5488c868075c026215, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theCamera: {fileID: 0}
 --- !u!114 &2391061473839487401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,10 +103,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  followDistance: 3
+  followDistance: 3.5
   inFrontOfMe: {fileID: 0}
   behindMe: {fileID: 0}
   lineLeader: 0
+  leaderSwapCooldown: 2
   keepYPos: 1
   collisionStopsMovement: 1
 --- !u!114 &1639718074855237299
@@ -189,3 +178,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4869585686929579966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038542542307472838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8735df8ca6a8a5488c868075c026215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theCamera: {fileID: 0}
+--- !u!114 &2660374031868999749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038542542307472838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129f1f79a2b47b545b30876a9435cccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pulsationFrequency: 1
+  pulsationAmplitude: 0.1
+  randomOffsetRange: 0.1

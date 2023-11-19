@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class CameraControls : MonoBehaviour
 {
     public float rotateSens = 1.5f;
+    [HideInInspector]
     public Transform lookAtPosition = null;
     // Start is called before the first frame update
     void Start()
@@ -61,8 +62,9 @@ public class CameraControls : MonoBehaviour
             return;
         }
 
-        transform.localPosition = newCameraPos;
-        transform.localRotation = q * transform.localRotation;
+        //transform.localPosition = newCameraPos;
+        //transform.localRotation = q * transform.localRotation;
+        transform.SetLocalPositionAndRotation(newCameraPos, q * transform.localRotation);
     }
 
     public void ComputeVerticalOrbit(float Direction)
@@ -76,8 +78,9 @@ public class CameraControls : MonoBehaviour
         r = invP.inverse * r * invP;
         Vector3 newCameraPos = r.MultiplyPoint(transform.localPosition);
 
-        transform.localPosition = newCameraPos;
-        transform.localRotation = q * transform.localRotation;
+        //transform.localPosition = newCameraPos;
+        //transform.localRotation = q * transform.localRotation;
+        transform.SetLocalPositionAndRotation(newCameraPos, q * transform.localRotation);
 
     }
 }

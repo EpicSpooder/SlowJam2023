@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnAndParent : MonoBehaviour
 {
+    public GameObject BasketGraphic;
     public GameObject objectToSpawn;   // The prefab you want to spawn
     public GameObject spawnLocation;    // The GameObject where you want to spawn the new object
     public GameObject parentObject;     // The GameObject you want to set as the parent
@@ -20,7 +21,7 @@ public class SpawnAndParent : MonoBehaviour
         }
     }
 
-    void SpawnAndParentObject()
+    public void SpawnAndParentObject()
     {
         if (objectToSpawn == null || spawnLocation == null || parentObject == null)
         {
@@ -51,5 +52,11 @@ public class SpawnAndParent : MonoBehaviour
             spawnedRigidbody.velocity = new Vector2(0f, 0f); // Optional: Reset other velocities
             spawnedRigidbody.angularVelocity = randomZVelocity;
         }
+
+        // Get the RectTransform component of the UI element
+        RectTransform rectTransform = BasketGraphic.GetComponent<RectTransform>();
+
+        // Set the UI element as the last child in the hierarchy
+        rectTransform.SetAsLastSibling();
     }
 }
