@@ -6064,6 +6064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSens: 0.35
   lookAtPosition: {fileID: 0}
+  keepYpos: 1
 --- !u!114 &959621743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6082,7 +6083,7 @@ MonoBehaviour:
   behindMe: {fileID: 0}
   lineLeader: 0
   leaderSwapCooldown: 1.5
-  keepYPos: 0
+  keepYPos: 1
   collisionStopsMovement: 1
 --- !u!114 &959621744
 MonoBehaviour:
