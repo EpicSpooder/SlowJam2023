@@ -18,7 +18,7 @@ public class SpawnAndParent : MonoBehaviour
         // Check if the specified key is pressed
         if (Input.GetKeyDown(spawnKey))
         {
-            SpawnAndParentObject();
+         //   SpawnAndParentObject();
         }
     }
 
