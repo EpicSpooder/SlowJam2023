@@ -20,10 +20,26 @@ namespace AK
         static const AkUniqueID NAV_FORWARD = 3621467206U;
         static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
-        static const AkUniqueID PLAYER_LAND = 3629196698U;
+        static const AkUniqueID SLIME_JUMP = 2006797914U;
+        static const AkUniqueID SLIME_LAND = 2608073725U;
         static const AkUniqueID START_MODE = 3412652423U;
         static const AkUniqueID UNPAUSE = 3412868374U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace GAME_PAUSED
+        {
+            static const AkUniqueID GROUP = 3367563548U;
+
+            namespace STATE
+            {
+                static const AkUniqueID PAUSED = 319258907U;
+                static const AkUniqueID UNPAUSED = 1365518790U;
+            } // namespace STATE
+        } // namespace GAME_PAUSED
+
+    } // namespace STATES
 
     namespace SWITCHES
     {

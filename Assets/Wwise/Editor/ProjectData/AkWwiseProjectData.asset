@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2fadaea4cafc3242b48284b0ec3fa5b8
     GuidInternal: 
-    m_lastTime: -8585012196406725190
+    m_lastTime: -8585011785446805918
     List:
     - name: Environment
       guid: ebcadaf40e259349aa3438186f108707
@@ -410,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: caedc8ea137d5144a6b89f8ac46ab85b
     GuidInternal: 
-    m_lastTime: -8585011807465573077
+    m_lastTime: -8585011787630692330
     List:
     - name: Button_Generic
       guid: 20f45c0d96c93d43ab3cc0c8213cc0fe
@@ -430,8 +430,8 @@ MonoBehaviour:
         guid: 20f45c0d96c93d43ab3cc0c8213cc0fe
       Path: Events\Default Work Unit\UI\Button_Generic
       maxAttenuation: 0
-      maxDuration: 1
-      minDuration: 1
+      maxDuration: 1.0116194
+      minDuration: 0.988514
     - name: Music
       guid: afd32d62bce8b240bb9759425b54f16f
       id: 3991942870
@@ -507,8 +507,8 @@ MonoBehaviour:
         guid: a2e8095bfa47394794c639eec4cac4a5
       Path: Events\Default Work Unit\UI\Nav_Backward
       maxAttenuation: 0
-      maxDuration: 1
-      minDuration: 1
+      maxDuration: 1.0116194
+      minDuration: 0.988514
     - name: Nav_Forward
       guid: 65e8180ebab5874f83d57eae90604ffe
       id: 3621467206
@@ -527,8 +527,8 @@ MonoBehaviour:
         guid: 65e8180ebab5874f83d57eae90604ffe
       Path: Events\Default Work Unit\UI\Nav_Forward
       maxAttenuation: 0
-      maxDuration: 1
-      minDuration: 1
+      maxDuration: 1.0116194
+      minDuration: 0.988514
     - name: Pause
       guid: 5493dff0a0131a43b77280a7a129944b
       id: 3092587493
@@ -586,9 +586,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.0307083
       minDuration: 2.0307083
-    - name: Player_Land
-      guid: 4e59b0f018122b4a9857105fb9d1ce29
-      id: 3629196698
+    - name: Slime
+      guid: df2be524209f8440bd70d42a0dffb807
+      id: 3803999823
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -596,13 +596,50 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: caedc8ea137d5144a6b89f8ac46ab85b
-      - ElementName: Player
+      - ElementName: Slime
         ObjectType: 4
-        guid: 86e340a905a3a04f90cf89006d03face
-      - ElementName: Player_Land
+        guid: df2be524209f8440bd70d42a0dffb807
+      Path: Events\Default Work Unit\Slime
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Slime_Jump
+      guid: d0441fc5ebbb104fb5bf1102e2ee458e
+      id: 2006797914
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: Slime
+        ObjectType: 4
+        guid: df2be524209f8440bd70d42a0dffb807
+      - ElementName: Slime_Jump
         ObjectType: 3
-        guid: 4e59b0f018122b4a9857105fb9d1ce29
-      Path: Events\Default Work Unit\Player\Player_Land
+        guid: d0441fc5ebbb104fb5bf1102e2ee458e
+      Path: Events\Default Work Unit\Slime\Slime_Jump
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
+    - name: Slime_Land
+      guid: ad339d69b55bb2498001da23cd387474
+      id: 2608073725
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: Slime
+        ObjectType: 4
+        guid: df2be524209f8440bd70d42a0dffb807
+      - ElementName: Slime_Land
+        ObjectType: 3
+        guid: ad339d69b55bb2498001da23cd387474
+      Path: Events\Default Work Unit\Slime\Slime_Land
       maxAttenuation: 0
       maxDuration: 2
       minDuration: 2
@@ -771,8 +808,58 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 15be18a801eaeb4cb4218a30a1474460
     GuidInternal: 
-    m_lastTime: -8585012232349761915
-    List: []
+    m_lastTime: -8585011786594285479
+    List:
+    - name: Game_Paused
+      guid: 57b829f7194e3f42978233d58bd17c1b
+      id: 3367563548
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 15be18a801eaeb4cb4218a30a1474460
+      - ElementName: Game_Paused
+        ObjectType: 9
+        guid: 57b829f7194e3f42978233d58bd17c1b
+      Path: States\Default Work Unit\Game_Paused
+      values:
+      - name: Paused
+        guid: e880db23bf017e4e82cb1ee658a5eff9
+        id: 319258907
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15be18a801eaeb4cb4218a30a1474460
+        - ElementName: Game_Paused
+          ObjectType: 9
+          guid: 57b829f7194e3f42978233d58bd17c1b
+        - ElementName: Paused
+          ObjectType: 8
+          guid: e880db23bf017e4e82cb1ee658a5eff9
+      - name: Unpaused
+        guid: c913f5727b19c647b6268ca504dd070c
+        id: 1365518790
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15be18a801eaeb4cb4218a30a1474460
+        - ElementName: Game_Paused
+          ObjectType: 9
+          guid: 57b829f7194e3f42978233d58bd17c1b
+        - ElementName: Unpaused
+          ObjectType: 8
+          guid: c913f5727b19c647b6268ca504dd070c
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -852,7 +939,7 @@ MonoBehaviour:
     m_lastTime: -8585012232349731988
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000e0000000f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

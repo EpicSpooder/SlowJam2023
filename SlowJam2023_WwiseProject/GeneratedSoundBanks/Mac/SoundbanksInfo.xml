@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E3644C3D-EF54-EAD5-30FA-D3C0711B3431}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AF951AB1-EE97-2E25-C561-CB02E3F51851}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -30,6 +30,14 @@
 				<GameParameter Id="2054307141" Name="Environment_Volume"/>
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3367563548" Name="Game_Paused">
+					<States>
+						<State Id="319258907" Name="Paused"/>
+						<State Id="1365518790" Name="Unpaused"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="3865314626" Name="Material">
 					<Switches>
@@ -153,7 +161,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9A4922B6-2EB1-594C-C0F7-C96E8745C3A2}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C93F5AC2-10DB-589A-F285-C4A09319B85A}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -197,6 +205,10 @@
 					<ShortName>Forest theme A'.wav</ShortName>
 					<CachePath>SFX/Forest theme A'_10C4C929.wem</CachePath>
 				</File>
+				<File Id="511405696" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slime_Jump\Slime_Jump-Variation1.wav</ShortName>
+					<CachePath>SFX/Slime_Jump/Slime_Jump-Variation1_10C4C929.wem</CachePath>
+				</File>
 				<File Id="575808378" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Stone\Land_Stone-Variation1.wav</ShortName>
 					<CachePath>SFX/Land_Stone/Land_Stone-Variation1_10C4C929.wem</CachePath>
@@ -205,6 +217,10 @@
 					<ShortName>Land_Grass\Land_Grass-Variation2.wav</ShortName>
 					<CachePath>SFX/Land_Grass/Land_Grass-Variation2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="723415574" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slime_Jump\Slime_Jump-Variation2.wav</ShortName>
+					<CachePath>SFX/Slime_Jump/Slime_Jump-Variation2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="941640842" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Jump\Player_Jump-Variation3.wav</ShortName>
 					<CachePath>SFX/Player_Jump/Player_Jump-Variation3_10C4C929.wem</CachePath>
@@ -212,6 +228,10 @@
 				<File Id="957696017" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Grass\Land_Grass-Variation3.wav</ShortName>
 					<CachePath>SFX/Land_Grass/Land_Grass-Variation3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1007556363" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slime_Jump\Slime_Jump-Variation3.wav</ShortName>
+					<CachePath>SFX/Slime_Jump/Slime_Jump-Variation3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1013012491" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Forest theme B.wav</ShortName>
@@ -235,7 +255,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1301445487" Name="Button_Generic" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="1301445487" Name="Button_Generic" DurationType="OneShot" DurationMin="0.988514" DurationMax="1.0116194">
 					<MediaRefs>
 						<MediaRef Id="410789529"/>
 					</MediaRefs>
@@ -252,7 +272,7 @@
 						<MediaRef Id="260291604"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="647488260" Name="Nav_Backward" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="647488260" Name="Nav_Backward" DurationType="OneShot" DurationMin="0.988514" DurationMax="1.0116194">
 					<MediaRefs>
 						<MediaRef Id="1024747270"/>
 					</MediaRefs>
@@ -260,7 +280,7 @@
 						<ActionPostEventEntry Id="1301445487" Name="Button_Generic"/>
 					</ActionPostEvent>
 				</Event>
-				<Event Id="3621467206" Name="Nav_Forward" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="3621467206" Name="Nav_Forward" DurationType="OneShot" DurationMin="0.988514" DurationMax="1.0116194">
 					<MediaRefs>
 						<MediaRef Id="393505334"/>
 					</MediaRefs>
@@ -273,14 +293,24 @@
 						<MediaRef Id="1035294855"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1305133589" Name="Player_Jump" DurationType="OneShot" DurationMin="2.0307083" DurationMax="2.0307083">
+				<Event Id="1305133589" Name="Player_Jump" MaxAttenuation="50" DurationType="OneShot" DurationMin="2.0307083" DurationMax="2.0307083">
 					<MediaRefs>
 						<MediaRef Id="443681236"/>
 						<MediaRef Id="451811287"/>
 						<MediaRef Id="941640842"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3629196698" Name="Player_Land" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="2006797914" Name="Slime_Jump" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="511405696"/>
+						<MediaRef Id="723415574"/>
+						<MediaRef Id="1007556363"/>
+					</MediaRefs>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="2608073725" Name="Slime_Land"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="2608073725" Name="Slime_Land" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3865314626" Id="1216965916"/>
@@ -324,5 +354,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AAA12CD6-0DF6-4453-0397-E6C0AE68D5F1}</FileHash>
+	<FileHash>{E35A4A7A-0936-63DF-9107-BE8144F5B7FC}</FileHash>
 </SoundBanksInfo>

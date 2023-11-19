@@ -11,6 +11,24 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Environment" ID="{F4DACAEB-250E-4993-AA34-38186F108707}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Game_Paused" ID="{F729B857-4E19-423F-9782-33D58BD17C1B}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Paused" ID="{23DB80E8-01BF-4E7E-82CB-1EE658A5EFF9}"/>
+										<CustomState Name="" ID="{A3B3CCAB-66AB-4A39-90EC-265002AA8F8F}" ShortID="527916730">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-20"/>
+												<Property Name="Lowpass" Type="int16" Value="64"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>
@@ -52,6 +70,25 @@
 							</ObjectLists>
 						</Bus>
 						<Bus Name="Music" ID="{A5267134-C9B7-4455-A171-5B86D6F6DEC7}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Game_Paused" ID="{F729B857-4E19-423F-9782-33D58BD17C1B}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Paused" ID="{23DB80E8-01BF-4E7E-82CB-1EE658A5EFF9}"/>
+										<CustomState Name="" ID="{8E0B2A26-8E0E-4DE5-B2A1-5947821EE653}" ShortID="583335254">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-6"/>
+												<Property Name="Lowpass" Type="int16" Value="66"/>
+												<Property Name="Pitch" Type="int32" Value="-200"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>
@@ -93,6 +130,24 @@
 							</ObjectLists>
 						</Bus>
 						<Bus Name="SFX" ID="{5FBA916E-AC0E-4AEB-B01A-9A32FEF819D5}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Game_Paused" ID="{F729B857-4E19-423F-9782-33D58BD17C1B}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Paused" ID="{23DB80E8-01BF-4E7E-82CB-1EE658A5EFF9}"/>
+										<CustomState Name="" ID="{27C5151C-4A2A-4CD2-B209-A8E44975D5BD}" ShortID="319573395">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-6"/>
+												<Property Name="Pitch" Type="int32" Value="-500"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>

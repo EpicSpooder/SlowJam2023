@@ -1,3 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3367563548	Game_Paused			\Default Work Unit\Game_Paused	
+
+State	ID	Name	State Group			Notes
+	319258907	Paused	Game_Paused			
+	1365518790	Unpaused	Game_Paused			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	319573395	Paused	Game_Paused	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
+	527916730	Paused	Game_Paused	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Environment		
+	583335254	Paused	Game_Paused	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	

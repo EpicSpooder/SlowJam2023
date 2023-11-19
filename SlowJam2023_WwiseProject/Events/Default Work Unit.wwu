@@ -16,17 +16,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Player_Land" ID="{F0B0594E-1218-4A2B-9857-105FB9D1CE29}">
-							<ChildrenList>
-								<Action Name="" ID="{8FA76C52-ACAE-4E4D-A508-8D5E3DFBEF90}" ShortID="906568449">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Land_Material" ID="{A65506BE-3F9B-4E4C-8C98-8DDD86548C54}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{29A0D9CF-8866-41B4-AC47-E2B38AB1AB13}" ShortID="724514317">
@@ -158,6 +147,43 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Forest Level" ID="{0DF9F56D-8080-47ED-8C63-BA77716DE442}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Slime" ID="{24E52BDF-9F20-4084-BD70-D42A0DFFB807}" ShortID="147337243">
+					<ChildrenList>
+						<Event Name="Slime_Jump" ID="{C51F44D0-BBEB-4F10-B5BF-1102E2EE458E}">
+							<ChildrenList>
+								<Action Name="" ID="{AB6DA734-4B23-45E9-86D4-8BA21F06C8DB}" ShortID="312750799">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slime_Jump" ID="{8BF43EEB-742C-4545-A24C-4F09940F55D6}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9416BA45-28C7-4E67-86E7-CD0739A3C659}" ShortID="760884741">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slime_Land" ID="{699D33AD-5BB5-49B2-8001-DA23CD387474}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Slime_Land" ID="{699D33AD-5BB5-49B2-8001-DA23CD387474}">
+							<ChildrenList>
+								<Action Name="" ID="{E3421961-BB31-447F-BCE4-0FE51654A8C9}" ShortID="525369063">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Land_Material" ID="{A65506BE-3F9B-4E4C-8C98-8DDD86548C54}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
