@@ -1,8 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
+	535067836	Hover_button			\Default Work Unit\UI\Hover_button	
 	1598298728	Music_Menu			\Default Work Unit\Music\Music_Menu	
 	2181728358	Music_Forest			\Default Work Unit\Music\Music_Forest	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	470881686	Slime Game Demo 3_0	E:\Unity Projects\2023.11 Slow Jam 2023\SlowJam2023\SlowJam2023_WwiseProject\.cache\Mac\SFX\Slime Game Demo 3.0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Forest Level\Forest Theme\Slime Game Demo 3_0		2671404
-	693676831	Slime Game Demo 1_0	E:\Unity Projects\2023.11 Slow Jam 2023\SlowJam2023\SlowJam2023_WwiseProject\.cache\Mac\SFX\Slime Game Demo 1.0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main Menu\Main Menu Theme\Slime Game Demo 1_0		2835792
+	470881686	Slime Game Demo 3_0	D:\Unity Projects\2023.11 Slow Jam 2023\SlowJam2023\SlowJam2023_WwiseProject\.cache\Mac\SFX\Slime Game Demo 3.0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Forest Level\Forest Theme\Slime Game Demo 3_0		2671404
+	693676831	Slime Game Demo 1_0	D:\Unity Projects\2023.11 Slow Jam 2023\SlowJam2023\SlowJam2023_WwiseProject\.cache\Mac\SFX\Slime Game Demo 1.0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main Menu\Main Menu Theme\Slime Game Demo 1_0		2835792
 

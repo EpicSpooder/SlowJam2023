@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{F9D4C4C5-B012-48B4-93CF-5A9292A9557D}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Music_Menu" ID="{F010B6E9-EC58-4122-ABA5-D22BCB5130C2}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hover_button" ID="{8CDF5B08-9E6D-472B-B4D0-BE7399866DE1}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Forest" ID="{830FDF8A-5192-49FC-92AD-CC91AEB3441D}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

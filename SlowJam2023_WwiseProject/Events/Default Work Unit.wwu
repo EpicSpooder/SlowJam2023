@@ -4,7 +4,21 @@
 		<WorkUnit Name="Default Work Unit" ID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="Player" ID="{A940E386-A305-4FA0-90CF-89006D03FACE}" ShortID="355356463"/>
-				<Folder Name="UI" ID="{29A0D9CF-8866-41B4-AC47-E2B38AB1AB13}" ShortID="724514317"/>
+				<Folder Name="UI" ID="{29A0D9CF-8866-41B4-AC47-E2B38AB1AB13}" ShortID="724514317">
+					<ChildrenList>
+						<Event Name="Hover_button" ID="{8CDF5B08-9E6D-472B-B4D0-BE7399866DE1}">
+							<ChildrenList>
+								<Action Name="" ID="{CCF3F7D6-EDF9-40C5-9217-B57C4444E90F}" ShortID="898109891">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AndrewHuang_WMD_hihat_one_shot_1" ID="{352C41E1-F245-4A6B-8AC3-EABE942D8E4E}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="Music" ID="{622DD3AF-E8BC-40B2-BB97-59425B54F16F}" ShortID="71089383">
 					<ChildrenList>
 						<Event Name="Music_Menu" ID="{F010B6E9-EC58-4122-ABA5-D22BCB5130C2}">

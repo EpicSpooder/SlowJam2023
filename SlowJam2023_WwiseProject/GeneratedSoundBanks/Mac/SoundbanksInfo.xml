@@ -153,7 +153,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6CD979AD-EA48-95A5-8189-CDBB4A9A4740}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B18CBFA2-30A6-C731-FA65-35D462508274}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -167,12 +167,13 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2181728358" Name="Music_Forest" DurationType="OneShot" DurationMin="13.913062" DurationMax="13.913062">
+				<Event Id="535067836" Name="Hover_button" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2181728358" Name="Music_Forest" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="470881686"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1598298728" Name="Music_Menu" DurationType="OneShot" DurationMin="14.76925" DurationMax="14.76925">
+				<Event Id="1598298728" Name="Music_Menu" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="693676831"/>
 					</MediaRefs>
@@ -180,5 +181,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B8C55087-4BB5-CB29-FEB3-EA45D66CC36A}</FileHash>
+	<FileHash>{4B50D4CA-B5C4-226E-394A-65DC307D706D}</FileHash>
 </SoundBanksInfo>
