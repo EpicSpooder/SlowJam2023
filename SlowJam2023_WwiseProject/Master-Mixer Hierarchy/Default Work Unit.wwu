@@ -19,6 +19,10 @@
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
+										<StateRef Name="Unpaused" ID="{72F513C9-197B-47C6-B626-8CA504DD070C}"/>
+										<CustomState Name="" ID="{0252C50B-09A5-4ED8-836B-66CFF5B72588}" ShortID="796956946"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="Paused" ID="{23DB80E8-01BF-4E7E-82CB-1EE658A5EFF9}"/>
 										<CustomState Name="" ID="{A3B3CCAB-66AB-4A39-90EC-265002AA8F8F}" ShortID="527916730">
 											<PropertyList>
@@ -39,7 +43,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="Music_Volume" ID="{205694D1-44A0-4949-98DC-B936188C77AF}" WorkUnitID="{0C8E001F-DA21-4144-BB90-FB12E453F2E0}"/>
+														<ObjectRef Name="Environment_Volume" ID="{D6F80DED-2D30-438E-A9CE-18EAF01916AE}" WorkUnitID="{0C8E001F-DA21-4144-BB90-FB12E453F2E0}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -77,6 +81,10 @@
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Unpaused" ID="{72F513C9-197B-47C6-B626-8CA504DD070C}"/>
+										<CustomState Name="" ID="{A9688D0C-CE3A-49C3-81E5-6399C0141533}" ShortID="268442039"/>
+									</CustomState>
 									<CustomState>
 										<StateRef Name="Paused" ID="{23DB80E8-01BF-4E7E-82CB-1EE658A5EFF9}"/>
 										<CustomState Name="" ID="{8E0B2A26-8E0E-4DE5-B2A1-5947821EE653}" ShortID="583335254">
@@ -137,6 +145,10 @@
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Unpaused" ID="{72F513C9-197B-47C6-B626-8CA504DD070C}"/>
+										<CustomState Name="" ID="{1C24880B-4C99-4A74-8811-F5F3692018FE}" ShortID="384203508"/>
+									</CustomState>
 									<CustomState>
 										<StateRef Name="Paused" ID="{23DB80E8-01BF-4E7E-82CB-1EE658A5EFF9}"/>
 										<CustomState Name="" ID="{27C5151C-4A2A-4CD2-B209-A8E44975D5BD}" ShortID="319573395">

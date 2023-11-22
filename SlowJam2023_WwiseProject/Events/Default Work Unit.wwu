@@ -78,7 +78,7 @@
 								<Action Name="" ID="{510878A2-259F-4AC1-808E-0627D1DA0B7D}" ShortID="181554805">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Forest theme INTRO" ID="{90E657B7-137E-4F30-9523-86C820CA450F}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
+											<ObjectRef Name="Forest theme INTRO" ID="{FE8E0EAE-210D-4EC3-A7CD-F71A188337AF}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

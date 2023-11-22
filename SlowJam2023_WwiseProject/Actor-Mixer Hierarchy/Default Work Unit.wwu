@@ -315,7 +315,7 @@
 								<ActiveSource Name="Unpause" ID="{7E0058D4-9DFF-418C-ABB2-99799FD54024}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Forest theme INTRO" ID="{90E657B7-137E-4F30-9523-86C820CA450F}" ShortID="345274755">
+						<Sound Name="Forest theme INTRO" ID="{FE8E0EAE-210D-4EC3-A7CD-F71A188337AF}" ShortID="164309011">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F1B3AD5C-A4EE-40EA-AD63-C0BF68768FA8}"/>
@@ -325,7 +325,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Forest theme INTRO" ID="{82EA5EF7-FF6B-4FE3-BEAC-F0C8E541D963}">
+								<AudioFileSource Name="Forest theme INTRO" ID="{72CDFA5A-FF3F-44C7-8E34-D1D6159F70A8}">
 									<Language>SFX</Language>
 									<AudioFile>Forest theme INTRO.wav</AudioFile>
 									<MediaIDList>
@@ -334,7 +334,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Forest theme INTRO" ID="{82EA5EF7-FF6B-4FE3-BEAC-F0C8E541D963}" Platform="Linked"/>
+								<ActiveSource Name="Forest theme INTRO" ID="{72CDFA5A-FF3F-44C7-8E34-D1D6159F70A8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -777,7 +777,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Menu loop" ID="{227346A4-E661-42DC-9C0C-5439CE57A7B2}" ShortID="438152155">
+								<Sound Name="Menu Loop 1_1" ID="{AFE99F17-1DF6-446B-AA71-82C76AC15D71}" ShortID="78241032">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F1B3AD5C-A4EE-40EA-AD63-C0BF68768FA8}"/>
@@ -787,21 +787,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Menu loop" ID="{00912965-F1B7-48EC-B68C-6AD0BCE3888E}">
+										<AudioFileSource Name="Menu Loop 1_1" ID="{F68DED42-121B-4E33-ABDC-E4AD0F6B1A5F}">
 											<Language>SFX</Language>
-											<AudioFile>Menu loop.wav</AudioFile>
+											<AudioFile>Menu Loop 1.1.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="260291604"/>
+												<MediaID ID="366413945"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Menu loop" ID="{00912965-F1B7-48EC-B68C-6AD0BCE3888E}" Platform="Linked"/>
+										<ActiveSource Name="Menu Loop 1_1" ID="{F68DED42-121B-4E33-ABDC-E4AD0F6B1A5F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<Playlist>
-								<ItemRef Name="Menu loop" ID="{227346A4-E661-42DC-9C0C-5439CE57A7B2}"/>
+								<ItemRef Name="Menu Loop 1_1" ID="{AFE99F17-1DF6-446B-AA71-82C76AC15D71}"/>
 							</Playlist>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Cave Level" ID="{A41ECAAE-FFB8-4B8A-A840-ABD986946AE9}" ShortID="863548578">

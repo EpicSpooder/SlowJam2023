@@ -3,6 +3,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	319258907	Paused	Game_Paused			
+	748895195	None	Game_Paused			
 	1365518790	Unpaused	Game_Paused			
 
 Custom State	ID	Name	State Group	Owner		Notes
@@ -19,6 +20,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
 	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
 	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2054307141	Environment_Volume			\Default Work Unit\Volume Sliders\Environment_Volume	
 	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
 	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
 	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	

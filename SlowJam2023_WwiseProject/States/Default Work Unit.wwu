@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<StateGroup Name="Game_Paused" ID="{F729B857-4E19-423F-9782-33D58BD17C1B}">
 					<ChildrenList>
+						<State Name="None" ID="{3926341A-C6C7-4DD9-BE8F-CB42A4A6075A}"/>
 						<State Name="Unpaused" ID="{72F513C9-197B-47C6-B626-8CA504DD070C}"/>
 						<State Name="Paused" ID="{23DB80E8-01BF-4E7E-82CB-1EE658A5EFF9}"/>
 					</ChildrenList>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AF951AB1-EE97-2E25-C561-CB02E3F51851}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0A53690D-F2A3-5D2C-3BE2-49C208D609A5}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -34,6 +34,7 @@
 				<StateGroup Id="3367563548" Name="Game_Paused">
 					<States>
 						<State Id="319258907" Name="Paused"/>
+						<State Id="748895195" Name="None"/>
 						<State Id="1365518790" Name="Unpaused"/>
 					</States>
 				</StateGroup>
@@ -161,17 +162,13 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C93F5AC2-10DB-589A-F285-C4A09319B85A}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B609120B-9D36-06FD-9A19-33CC783E23C9}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="8426787" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Stone\Land_Stone-Variation3.wav</ShortName>
 					<CachePath>SFX/Land_Stone/Land_Stone-Variation3_10C4C929.wem</CachePath>
-				</File>
-				<File Id="260291604" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Menu loop.wav</ShortName>
-					<CachePath>SFX/Menu loop_10C4C929.wem</CachePath>
 				</File>
 				<File Id="347146506" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Stone\Land_Stone-Variation2.wav</ShortName>
@@ -180,6 +177,10 @@
 				<File Id="357027929" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Grass\Land_Grass-Variation1.wav</ShortName>
 					<CachePath>SFX/Land_Grass/Land_Grass-Variation1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="366413945" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Menu Loop 1.1.wav</ShortName>
+					<CachePath>SFX/Menu Loop 1.1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="393505334" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Navigate forwards.wav</ShortName>
@@ -269,7 +270,7 @@
 				</Event>
 				<Event Id="1598298728" Name="Music_Menu" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="260291604"/>
+						<MediaRef Id="366413945"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="647488260" Name="Nav_Backward" DurationType="OneShot" DurationMin="0.988514" DurationMax="1.0116194">
@@ -354,5 +355,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E35A4A7A-0936-63DF-9107-BE8144F5B7FC}</FileHash>
+	<FileHash>{32C7D4D8-9A75-331E-45C6-54CA3115B507}</FileHash>
 </SoundBanksInfo>

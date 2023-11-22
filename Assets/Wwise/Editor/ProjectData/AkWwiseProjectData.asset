@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2fadaea4cafc3242b48284b0ec3fa5b8
     GuidInternal: 
-    m_lastTime: -8585011785446805918
+    m_lastTime: -8585009134162178730
     List:
     - name: Environment
       guid: ebcadaf40e259349aa3438186f108707
@@ -410,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: caedc8ea137d5144a6b89f8ac46ab85b
     GuidInternal: 
-    m_lastTime: -8585011787630692330
+    m_lastTime: -8585010841080711004
     List:
     - name: Button_Generic
       guid: 20f45c0d96c93d43ab3cc0c8213cc0fe
@@ -583,7 +583,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ddb855a36ff8264b9f09fdc8c1b850dc
       Path: Events\Default Work Unit\Player\Player_Jump
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 2.0307083
       minDuration: 2.0307083
     - name: Slime
@@ -620,7 +620,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d0441fc5ebbb104fb5bf1102e2ee458e
       Path: Events\Default Work Unit\Slime\Slime_Jump
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 2
       minDuration: 2
     - name: Slime_Land
@@ -640,7 +640,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ad339d69b55bb2498001da23cd387474
       Path: Events\Default Work Unit\Slime\Slime_Land
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 2
       minDuration: 2
     - name: Start_Mode
@@ -808,7 +808,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 15be18a801eaeb4cb4218a30a1474460
     GuidInternal: 
-    m_lastTime: -8585011786594285479
+    m_lastTime: -8585010846132832040
     List:
     - name: Game_Paused
       guid: 57b829f7194e3f42978233d58bd17c1b
@@ -825,6 +825,22 @@ MonoBehaviour:
         guid: 57b829f7194e3f42978233d58bd17c1b
       Path: States\Default Work Unit\Game_Paused
       values:
+      - name: None
+        guid: 1a342639c7c6d94dbe8fcb42a4a6075a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 15be18a801eaeb4cb4218a30a1474460
+        - ElementName: Game_Paused
+          ObjectType: 9
+          guid: 57b829f7194e3f42978233d58bd17c1b
+        - ElementName: None
+          ObjectType: 8
+          guid: 1a342639c7c6d94dbe8fcb42a4a6075a
       - name: Paused
         guid: e880db23bf017e4e82cb1ee658a5eff9
         id: 319258907
@@ -939,7 +955,7 @@ MonoBehaviour:
     m_lastTime: -8585012232349731988
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000e0000000f000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000e0000000f0000001a0000001b0000001c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
