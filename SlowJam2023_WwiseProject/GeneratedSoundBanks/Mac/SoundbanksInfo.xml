@@ -162,7 +162,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FCD0BF00-023D-2121-95A2-6BC69DC34F4D}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{88B4A77E-5A5E-E242-B78A-1007CB9FABEE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -273,6 +273,7 @@
 						<MediaRef Id="366413945"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3264661319" Name="Music_Menu_Stop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="647488260" Name="Nav_Backward" DurationType="OneShot" DurationMin="0.988514" DurationMax="1.0116194">
 					<MediaRefs>
 						<MediaRef Id="1024747270"/>
@@ -336,6 +337,7 @@
 						<MediaRef Id="438389392"/>
 					</MediaRefs>
 					<ActionPostEvent>
+						<ActionPostEventEntry Id="3264661319" Name="Music_Menu_Stop"/>
 						<ActionPostEventEntry Id="3621467206" Name="Nav_Forward"/>
 					</ActionPostEvent>
 				</Event>
@@ -355,5 +357,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F107D12D-7FA2-68D9-A4C1-E27F1DC1A1D6}</FileHash>
+	<FileHash>{9BAFDA7C-E131-56C4-53D9-3D184A07BB58}</FileHash>
 </SoundBanksInfo>

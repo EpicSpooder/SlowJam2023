@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID BUTTON_GENERIC = 1301445487U;
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
         static const AkUniqueID MUSIC_MENU = 1598298728U;
+        static const AkUniqueID MUSIC_MENU_STOP = 3264661319U;
         static const AkUniqueID NAV_BACKWARD = 647488260U;
         static const AkUniqueID NAV_FORWARD = 3621467206U;
         static const AkUniqueID PAUSE = 3092587493U;

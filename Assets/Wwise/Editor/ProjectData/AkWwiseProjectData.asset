@@ -410,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: caedc8ea137d5144a6b89f8ac46ab85b
     GuidInternal: 
-    m_lastTime: -8585009100169706404
+    m_lastTime: -8585009063239585181
     List:
     - name: Button_Generic
       guid: 20f45c0d96c93d43ab3cc0c8213cc0fe
@@ -489,6 +489,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Music_Menu_Stop
+      guid: 865bc3cf7b83ea46bb297efd26044545
+      id: 3264661319
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: caedc8ea137d5144a6b89f8ac46ab85b
+      - ElementName: Music
+        ObjectType: 4
+        guid: afd32d62bce8b240bb9759425b54f16f
+      - ElementName: Music_Menu_Stop
+        ObjectType: 3
+        guid: 865bc3cf7b83ea46bb297efd26044545
+      Path: Events\Default Work Unit\Music\Music_Menu_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Nav_Backward
       guid: a2e8095bfa47394794c639eec4cac4a5
       id: 647488260

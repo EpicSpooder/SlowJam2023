@@ -77,9 +77,13 @@
 							<ChildrenList>
 								<Action Name="" ID="{EC29AE3B-99DA-464C-95D8-A674C2C0BB30}" ShortID="749002699">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="ActionType" Type="int16" Value="41"/>
 									</PropertyList>
-									<ReferenceList/>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Menu_Stop" ID="{CFC35B86-837B-46EA-BB29-7EFD26044545}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}"/>
+										</Reference>
+									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{510878A2-259F-4AC1-808E-0627D1DA0B7D}" ShortID="181554805">
 									<ReferenceList>
@@ -143,6 +147,21 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Forest Level" ID="{0DF9F56D-8080-47ED-8C63-BA77716DE442}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Music_Menu_Stop" ID="{CFC35B86-837B-46EA-BB29-7EFD26044545}">
+							<ChildrenList>
+								<Action Name="" ID="{2945410E-6A3B-4727-8C3B-C7A26255C3D8}" ShortID="28429211">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu Loop 1_1" ID="{AFE99F17-1DF6-446B-AA71-82C76AC15D71}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

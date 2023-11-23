@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2181728358	Music_Forest			\Default Work Unit\Music\Music_Forest	
 	2608073725	Slime_Land			\Default Work Unit\Slime\Slime_Land	
 	3092587493	Pause			\Default Work Unit\UI\Pause	
+	3264661319	Music_Menu_Stop			\Default Work Unit\Music\Music_Menu_Stop	
 	3412652423	Start_Mode			\Default Work Unit\UI\Start_Mode	
 	3412868374	Unpause			\Default Work Unit\UI\Unpause	
 	3621467206	Nav_Forward			\Default Work Unit\UI\Nav_Forward	
