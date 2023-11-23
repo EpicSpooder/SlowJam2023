@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="Env_Forest" ID="{48893983-DCD6-4F21-9B11-A37A01DEB0AC}" ShortID="688415595">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="50"/>
+						<Property Name="RadiusMax" Type="Real64" Value="30"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -21,7 +21,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>50</XPos>
+											<XPos>30</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -48,7 +48,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>50</XPos>
+											<XPos>30</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>

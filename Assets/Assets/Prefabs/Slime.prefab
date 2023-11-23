@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2660374031868999749}
   - component: {fileID: 3573966225368072957}
   - component: {fileID: 4112246021630190482}
+  - component: {fileID: 6791502042833697579}
   m_Layer: 2
   m_Name: Slime
   m_TagString: Untagged
@@ -104,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3448018452af09948a064dab4e07461e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 4
   followDistance: 2.5
   inFrontOfMe: {fileID: 0}
   behindMe: {fileID: 0}
@@ -126,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floor: {fileID: 0}
   movementIndicator: {fileID: 0}
-  moveSpeed: 3
+  moveSpeed: 4
   moveTo: {x: 0, y: 0, z: 0}
   canHoldMouseDown: 1
 --- !u!136 &7284592220276493609
@@ -245,3 +246,15 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 71d012aac7528524ba9c9c895ad19b01, type: 2}
+--- !u!114 &6791502042833697579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038542542307472838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c7400d8ccaec44992f609b49458266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -410,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: caedc8ea137d5144a6b89f8ac46ab85b
     GuidInternal: 
-    m_lastTime: -8585010841080711004
+    m_lastTime: -8585009100169706404
     List:
     - name: Button_Generic
       guid: 20f45c0d96c93d43ab3cc0c8213cc0fe
@@ -583,7 +583,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ddb855a36ff8264b9f09fdc8c1b850dc
       Path: Events\Default Work Unit\Player\Player_Jump
-      maxAttenuation: 50
+      maxAttenuation: 30
       maxDuration: 2.0307083
       minDuration: 2.0307083
     - name: Slime
@@ -620,7 +620,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d0441fc5ebbb104fb5bf1102e2ee458e
       Path: Events\Default Work Unit\Slime\Slime_Jump
-      maxAttenuation: 50
+      maxAttenuation: 30
       maxDuration: 2
       minDuration: 2
     - name: Slime_Land
@@ -640,7 +640,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ad339d69b55bb2498001da23cd387474
       Path: Events\Default Work Unit\Slime\Slime_Land
-      maxAttenuation: 50
+      maxAttenuation: 30
       maxDuration: 2
       minDuration: 2
     - name: Start_Mode

@@ -162,7 +162,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B609120B-9D36-06FD-9A19-33CC783E23C9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FCD0BF00-023D-2121-95A2-6BC69DC34F4D}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -294,14 +294,14 @@
 						<MediaRef Id="1035294855"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1305133589" Name="Player_Jump" MaxAttenuation="50" DurationType="OneShot" DurationMin="2.0307083" DurationMax="2.0307083">
+				<Event Id="1305133589" Name="Player_Jump" MaxAttenuation="30" DurationType="OneShot" DurationMin="2.0307083" DurationMax="2.0307083">
 					<MediaRefs>
 						<MediaRef Id="443681236"/>
 						<MediaRef Id="451811287"/>
 						<MediaRef Id="941640842"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2006797914" Name="Slime_Jump" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="2006797914" Name="Slime_Jump" MaxAttenuation="30" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="511405696"/>
 						<MediaRef Id="723415574"/>
@@ -311,7 +311,7 @@
 						<ActionPostEventEntry Id="2608073725" Name="Slime_Land"/>
 					</ActionPostEvent>
 				</Event>
-				<Event Id="2608073725" Name="Slime_Land" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="2608073725" Name="Slime_Land" MaxAttenuation="30" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3865314626" Id="1216965916"/>
@@ -355,5 +355,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{32C7D4D8-9A75-331E-45C6-54CA3115B507}</FileHash>
+	<FileHash>{F107D12D-7FA2-68D9-A4C1-E27F1DC1A1D6}</FileHash>
 </SoundBanksInfo>

@@ -75,6 +75,12 @@
 						</Event>
 						<Event Name="Start_Mode" ID="{37FED85A-AD53-4830-BB04-640F279FEE45}">
 							<ChildrenList>
+								<Action Name="" ID="{EC29AE3B-99DA-464C-95D8-A674C2C0BB30}" ShortID="749002699">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
 								<Action Name="" ID="{510878A2-259F-4AC1-808E-0627D1DA0B7D}" ShortID="181554805">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -89,16 +95,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Nav_Forward" ID="{0E18E865-B5BA-4F87-83D5-7EAE90604FFE}" WorkUnitID="{EAC8EDCA-7D13-4451-A6B8-9F8AC46AB85B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{EC29AE3B-99DA-464C-95D8-A674C2C0BB30}" ShortID="749002699">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Main Menu" ID="{36FB293E-A143-4280-ABE1-8ADCE6F83048}" WorkUnitID="{1065DE41-5FEA-4947-A399-54EDAC1A83B1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -168,7 +164,7 @@
 								<Action Name="" ID="{9416BA45-28C7-4E67-86E7-CD0739A3C659}" ShortID="760884741">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="41"/>
-										<Property Name="Delay" Type="Real64" Value="0.3"/>
+										<Property Name="Delay" Type="Real64" Value="0.4"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
